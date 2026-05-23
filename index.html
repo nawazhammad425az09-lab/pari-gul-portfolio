@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pari Gul | Professional Content Writer &amp; SEO Specialist</title>
+  <meta name="description" content="Pari Gul is a professional content writer and SEO specialist based in Pakistan. Expert in blog writing, SEO content, English-Urdu translation, and data entry." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Pari Gul | Professional Content Writer &amp; SEO Specialist" />
+  <meta property="og:description" content="Words that rank. Content that converts. Hire Pari Gul for SEO content, blog writing, translation, and data entry." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0a1628;
+      --navy-light: #0f2040;
+      --navy-mid: #122244;
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --gold-dim: rgba(201,168,76,0.13);
+      --white: #ffffff;
+      --white-dim: rgba(255,255,255,0.68);
+      --white-faint: rgba(255,255,255,0.08);
+      --border: rgba(201,168,76,0.22);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Lato',sans-serif; background:var(--navy); color:var(--white); overflow-x:hidden; line-height:1.7; }
+    h1,h2,h3,h4,h5 { font-family:'Playfair Display',serif; line-height:1.3; }
+    a { color:inherit; text-decoration:none; }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:var(--navy); }
+    ::-webkit-scrollbar-thumb { background:var(--gold); border-radius:3px; }
+
+    /* NAV */
+    #navbar {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      background:rgba(10,22,40,0.96); backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--border);
+      padding:0 5%; height:68px;
+      display:flex; align-items:center; justify-content:space-between;
+      transition:box-shadow .3s;
+    }
+    #navbar.scrolled { box-shadow:0 4px 30px rgba(0,0,0,.5); }
+    .nav-logo { font-family:'Playfair Display',serif; font-size:1.5rem; font-weight:700; color:var(--gold); letter-spacing:1px; }
+    .nav-logo span { color:var(--white); }
+    .nav-links { display:flex; gap:2rem; list-style:none; }
+    .nav-links a {
+      font-size:.85rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase;
+      color:var(--white-dim); transition:color .3s; position:relative;
+    }
+    .nav-links a::after {
+      content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px;
+      background:var(--gold); transition:width .3s;
+    }
+    .nav-links a:hover { color:var(--gold); }
+    .nav-links a:hover::after { width:100%; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+    .hamburger span { display:block; width:25px; height:2px; background:var(--white); transition:all .3s; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+    /* HERO */
+    #hero {
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      position:relative; overflow:hidden; text-align:center; padding:100px 5% 60px;
+    }
+    #particles-canvas { position:absolute; inset:0; pointer-events:none; }
+    .hero-content { position:relative; z-index:2; max-width:820px; }
+    .monogram {
+      width:120px; height:120px; border-radius:50%;
+      border:3px solid var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 1.5rem;
+      background:var(--gold-dim);
+      box-shadow:0 0 30px rgba(201,168,76,.3);
+      position:relative;
+    }
+    .monogram::before {
+      content:''; position:absolute; inset:-7px; border-radius:50%;
+      border:1px solid rgba(201,168,76,.25);
+    }
+    .monogram-text { font-family:'Playfair Display',serif; font-size:2.8rem; font-weight:700; color:var(--gold); letter-spacing:2px; }
+    .hero-name {
+      font-size:clamp(2.5rem,6vw,4.5rem); font-weight:900; margin-bottom:.4rem;
+      background:linear-gradient(135deg,var(--white) 0%,var(--gold-light) 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .hero-subtitle { font-size:clamp(1rem,2.2vw,1.2rem); color:var(--gold); font-weight:600; letter-spacing:2px; text-transform:uppercase; margin-bottom:1rem; }
+    .typewriter-wrap { font-size:clamp(1.05rem,2.2vw,1.35rem); color:var(--white-dim); margin-bottom:1rem; min-height:2rem; }
+    #typewriter-text { color:var(--gold-light); font-weight:700; }
+    .cursor { display:inline-block; color:var(--gold); animation:blink .7s infinite; font-weight:300; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .hero-tagline { font-style:italic; color:var(--white-dim); font-size:1.1rem; margin-bottom:2rem; font-family:'Playfair Display',serif; }
+    .hero-loc { font-size:.9rem; color:var(--white-dim); margin-bottom:2.5rem; letter-spacing:1px; }
+    .hero-loc i { color:var(--gold); margin-right:6px; }
+    .btn-group { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+    .btn {
+      padding:13px 34px; border-radius:4px;
+      font-family:'Lato',sans-serif; font-size:.92rem; font-weight:700;
+      letter-spacing:1px; text-transform:uppercase; cursor:pointer; border:none; transition:all .3s; display:inline-block;
+    }
+    .btn-outline { background:transparent; border:2px solid var(--gold); color:var(--gold); }
+    .btn-outline:hover { background:var(--gold); color:var(--navy); }
+    .btn-gold { background:var(--gold); color:var(--navy); animation:gpulse 2s infinite; }
+    .btn-gold:hover { background:var(--gold-light); transform:translateY(-2px); }
+    @keyframes gpulse { 0%,100%{box-shadow:0 0 20px rgba(201,168,76,.4)} 50%{box-shadow:0 0 42px rgba(201,168,76,.85)} }
+    .scroll-ind {
+      position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:5px;
+      animation:float 2s ease-in-out infinite; cursor:pointer;
+    }
+    .scroll-ind span { font-size:.68rem; letter-spacing:2px; color:var(--white-dim); text-transform:uppercase; }
+    .scroll-ind i { color:var(--gold); font-size:1.1rem; }
+    @keyframes float { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
+
+    /* SECTIONS */
+    section { padding:96px 5%; }
+    .sec-hdr { text-align:center; margin-bottom:3.5rem; }
+    .sec-label { font-size:.78rem; letter-spacing:4px; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:.7rem; }
+    .sec-title { font-size:clamp(1.9rem,4vw,3rem); font-weight:700; margin-bottom:.9rem; }
+    .sec-div { width:56px; height:3px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:0 auto 1.3rem; }
+    .sec-desc { color:var(--white-dim); max-width:580px; margin:0 auto; font-size:1rem; }
+    .fade-in { opacity:0; transform:translateY(28px); transition:opacity .7s ease,transform .7s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s} .d4{transition-delay:.4s}
+
+    /* ABOUT */
+    #about { background:var(--navy-light); }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; max-width:1100px; margin:0 auto; }
+    .about-text p { color:var(--white-dim); margin-bottom:1.4rem; font-size:1.02rem; line-height:1.9; }
+    .badges { display:flex; gap:.8rem; flex-wrap:wrap; margin-top:.5rem; }
+    .badge {
+      padding:9px 18px; border:1px solid var(--gold); border-radius:30px;
+      font-size:.82rem; font-weight:700; color:var(--gold); background:var(--gold-dim); transition:all .3s;
+    }
+    .badge:hover { background:var(--gold); color:var(--navy); }
+    .about-stats { display:flex; flex-direction:column; gap:1.3rem; }
+    .stat-card {
+      background:var(--navy-mid); border:1px solid var(--border); border-radius:12px;
+      padding:1.4rem; display:flex; align-items:center; gap:1.1rem; transition:transform .3s,box-shadow .3s;
+    }
+    .stat-card:hover { transform:translateX(6px); box-shadow:0 4px 20px rgba(201,168,76,.1); }
+    .stat-icon {
+      width:48px; height:48px; border-radius:50%; background:var(--gold-dim);
+      display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    }
+    .stat-icon i { color:var(--gold); font-size:1.15rem; }
+    .stat-num { font-family:'Playfair Display',serif; font-size:1.7rem; font-weight:700; color:var(--gold); line-height:1; }
+    .stat-lbl { font-size:.87rem; color:var(--white-dim); margin-top:2px; }
+
+    /* SKILLS */
+    #skills { background:var(--navy); }
+    .skills-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.8rem 4rem; max-width:900px; margin:0 auto; }
+    .skill-hdr { display:flex; justify-content:space-between; margin-bottom:7px; }
+    .skill-name { font-weight:700; font-size:.93rem; }
+    .skill-pct { color:var(--gold); font-weight:700; font-size:.88rem; }
+    .skill-bg { height:6px; background:var(--white-faint); border-radius:3px; overflow:hidden; }
+    .skill-fill { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-light)); border-radius:3px; width:0%; transition:width 1.5s cubic-bezier(.25,.46,.45,.94); }
+
+    /* PORTFOLIO */
+    #portfolio { background:var(--navy-light); }
+    .tabs-nav { display:flex; border-bottom:2px solid var(--border); overflow-x:auto; scrollbar-width:none; margin-bottom:2rem; }
+    .tabs-nav::-webkit-scrollbar { display:none; }
+    .tab-btn {
+      padding:13px 26px; background:transparent; border:none; color:var(--white-dim);
+      font-family:'Lato',sans-serif; font-size:.86rem; font-weight:700; letter-spacing:1px;
+      text-transform:uppercase; cursor:pointer; white-space:nowrap; position:relative; transition:color .3s;
+    }
+    .tab-btn::after { content:''; position:absolute; bottom:-2px; left:0; right:0; height:2px; background:var(--gold); transform:scaleX(0); transition:transform .3s; }
+    .tab-btn:hover { color:var(--white); }
+    .tab-btn.active { color:var(--gold); }
+    .tab-btn.active::after { transform:scaleX(1); }
+    .tab-panel { display:none; }
+    .tab-panel.active { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1.4rem; }
+    .article-card {
+      background:var(--navy-mid); border:1px solid var(--border); border-radius:12px;
+      padding:1.5rem; transition:transform .3s,box-shadow .3s,border-color .3s;
+      display:flex; flex-direction:column;
+    }
+    .article-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(0,0,0,.4); border-color:var(--gold); }
+    .art-cat {
+      display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:1.5px;
+      text-transform:uppercase; color:var(--gold); border:1px solid var(--gold);
+      border-radius:20px; padding:3px 11px; margin-bottom:.9rem; align-self:flex-start;
+    }
+    .art-title { font-size:1.1rem; font-weight:700; margin-bottom:.75rem; line-height:1.4; }
+    .art-excerpt { font-size:.87rem; color:var(--white-dim); line-height:1.7; margin-bottom:.9rem; }
+    .art-full { display:none; font-size:.87rem; color:var(--white-dim); line-height:1.8; margin-bottom:.9rem; }
+    .art-full h2 { font-family:'Playfair Display',serif; font-size:1.05rem; color:var(--gold); margin:1rem 0 .4rem; }
+    .art-full h3 { font-family:'Playfair Display',serif; font-size:.97rem; color:var(--white); margin:.75rem 0 .3rem; }
+    .art-full p { margin-bottom:.75rem; }
+    .art-meta {
+      display:flex; align-items:center; gap:.9rem; font-size:.78rem; color:var(--white-dim);
+      margin-top:auto; padding-top:.8rem; border-top:1px solid var(--white-faint); margin-bottom:.9rem;
+    }
+    .art-meta i { color:var(--gold); margin-right:4px; }
+    .rm-btn {
+      background:transparent; border:1px solid var(--gold); color:var(--gold);
+      padding:7px 16px; border-radius:4px; font-size:.8rem; font-weight:700;
+      letter-spacing:.5px; cursor:pointer; transition:all .3s; font-family:'Lato',sans-serif; align-self:flex-start;
+    }
+    .rm-btn:hover { background:var(--gold); color:var(--navy); }
+
+    /* SERVICES */
+    #services { background:var(--navy); }
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.8rem; max-width:1000px; margin:0 auto; }
+    .svc-card {
+      background:var(--navy-mid); border:1px solid var(--border); border-radius:16px;
+      padding:2.3rem 1.8rem; text-align:center; transition:all .3s; position:relative; overflow:hidden;
+    }
+    .svc-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:0; transition:opacity .3s; }
+    .svc-card:hover { transform:translateY(-6px); box-shadow:0 20px 50px rgba(0,0,0,.4); }
+    .svc-card:hover::before { opacity:1; }
+    .svc-icon { width:68px; height:68px; border-radius:50%; background:var(--gold-dim); border:2px solid var(--border); display:flex; align-items:center; justify-content:center; margin:0 auto 1.4rem; transition:all .3s; }
+    .svc-card:hover .svc-icon { background:var(--gold); border-color:var(--gold); }
+    .svc-icon i { color:var(--gold); font-size:1.5rem; transition:color .3s; }
+    .svc-card:hover .svc-icon i { color:var(--navy); }
+    .svc-title { font-size:1.12rem; font-weight:700; margin-bottom:.75rem; }
+    .svc-desc { color:var(--white-dim); font-size:.88rem; line-height:1.7; margin-bottom:1.3rem; }
+    .svc-price { display:inline-block; background:var(--gold-dim); border:1px solid var(--gold); color:var(--gold); padding:5px 16px; border-radius:20px; font-size:.78rem; font-weight:700; }
+
+    /* CONTACT */
+    #contact { background:var(--navy-light); }
+    .hire-top { text-align:center; margin-bottom:2.5rem; }
+    .avail-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(34,197,94,.1); border:1px solid rgba(34,197,94,.35);
+      color:#4ade80; padding:7px 18px; border-radius:30px; font-size:.86rem; font-weight:600; margin-bottom:1.3rem;
+    }
+    .avail-dot { width:8px; height:8px; border-radius:50%; background:#22c55e; box-shadow:0 0 8px #22c55e; animation:pg 2s infinite; flex-shrink:0; }
+    @keyframes pg { 0%,100%{box-shadow:0 0 8px #22c55e} 50%{box-shadow:0 0 18px #22c55e} }
+    .btn-hire {
+      display:inline-block; background:var(--gold); color:var(--navy);
+      padding:17px 56px; border-radius:4px; font-size:1.05rem; font-weight:900;
+      letter-spacing:3px; text-transform:uppercase; animation:gpulse 2s infinite; transition:all .3s;
+    }
+    .btn-hire:hover { background:var(--gold-light); transform:translateY(-3px); }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; max-width:1000px; margin:0 auto; }
+    .form-grp { margin-bottom:1.1rem; }
+    .form-lbl { display:block; font-size:.78rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--white-dim); margin-bottom:5px; }
+    .form-ctrl {
+      width:100%; background:var(--navy-mid); border:1px solid var(--border); color:var(--white);
+      padding:11px 15px; border-radius:6px; font-family:'Lato',sans-serif; font-size:.93rem;
+      transition:border-color .3s,box-shadow .3s; outline:none; appearance:none;
+    }
+    .form-ctrl:focus { border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,168,76,.1); }
+    .form-ctrl.err { border-color:#ef4444; }
+    .err-msg { color:#ef4444; font-size:.75rem; margin-top:4px; display:none; }
+    .err-msg.show { display:block; }
+    select.form-ctrl option { background:var(--navy-mid); }
+    textarea.form-ctrl { resize:vertical; min-height:115px; }
+    .contact-info { display:flex; flex-direction:column; gap:1.4rem; }
+    .cta-card {
+      background:var(--navy-mid); border:1px solid var(--border); border-radius:12px;
+      padding:1.4rem; display:flex; align-items:center; gap:.9rem; text-decoration:none; transition:all .3s;
+    }
+    .cta-card:hover { border-color:var(--gold); transform:translateX(6px); }
+    .cta-icon { width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.25rem; }
+    .icon-wa { background:rgba(37,211,102,.15); color:#25D366; }
+    .icon-em { background:rgba(201,168,76,.15); color:var(--gold); }
+    .cta-lbl { font-size:.78rem; color:var(--white-dim); margin-bottom:2px; text-transform:uppercase; letter-spacing:1px; }
+    .cta-val { font-size:.97rem; font-weight:600; }
+    .form-ok { display:none; text-align:center; padding:2rem; background:rgba(34,197,94,.08); border:1px solid rgba(34,197,94,.35); border-radius:12px; color:#4ade80; }
+
+    /* TESTIMONIALS */
+    #testimonials { background:var(--navy); }
+    .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.8rem; max-width:1000px; margin:0 auto; }
+    .testi-card {
+      background:var(--navy-mid); border:1px solid var(--border); border-radius:16px;
+      padding:1.9rem; transition:transform .3s,box-shadow .3s;
+    }
+    .testi-card:hover { transform:translateY(-4px); box-shadow:0 12px 40px rgba(0,0,0,.3); }
+    .testi-q { font-size:2.8rem; color:var(--gold); line-height:1; margin-bottom:.8rem; font-family:'Playfair Display',serif; opacity:.45; }
+    .testi-stars { color:var(--gold); margin-bottom:.9rem; }
+    .testi-text { font-size:.92rem; color:var(--white-dim); line-height:1.8; font-style:italic; margin-bottom:1.3rem; }
+    .testi-author { display:flex; align-items:center; gap:.75rem; }
+    .testi-av {
+      width:42px; height:42px; border-radius:50%; background:var(--gold-dim); border:2px solid var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Playfair Display',serif; font-weight:700; color:var(--gold); font-size:.88rem;
+    }
+    .testi-name { font-weight:700; font-size:.93rem; }
+    .testi-loc { font-size:.78rem; color:var(--white-dim); }
+
+    /* FOOTER */
+    footer { background:var(--navy-mid); border-top:1px solid var(--border); padding:3rem 5% 1.8rem; }
+    .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:2.5rem; margin-bottom:2rem; }
+    .footer-brand p { color:var(--white-dim); font-size:.88rem; line-height:1.7; margin-top:.8rem; }
+    .footer-brand .fe { color:var(--gold); font-size:.85rem; display:block; margin-top:.7rem; }
+    .footer-hd { font-size:.78rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+    .footer-links { list-style:none; display:flex; flex-direction:column; gap:.55rem; }
+    .footer-links a { color:var(--white-dim); font-size:.88rem; transition:color .3s; }
+    .footer-links a:hover { color:var(--gold); }
+    .social-row { display:flex; gap:.8rem; }
+    .soc-lnk {
+      width:38px; height:38px; border-radius:50%; background:var(--white-faint);
+      border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
+      color:var(--white-dim); transition:all .3s; font-size:.95rem;
+    }
+    .soc-lnk:hover { background:var(--gold); border-color:var(--gold); color:var(--navy); transform:translateY(-2px); }
+    .footer-btm { border-top:1px solid var(--border); padding-top:1.3rem; text-align:center; font-size:.82rem; color:var(--white-dim); }
+    .footer-btm span { color:var(--gold); }
+
+    /* RESPONSIVE */
+    @media(max-width:900px) {
+      .about-grid,.contact-grid { grid-template-columns:1fr; gap:2.5rem; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:700px) {
+      .nav-links { display:none; flex-direction:column; position:fixed; top:68px; left:0; right:0; background:rgba(10,22,40,.98); padding:1.5rem 2rem; gap:1.2rem; border-bottom:1px solid var(--border); }
+      .nav-links.open { display:flex; }
+      .hamburger { display:flex; }
+      .skills-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      section { padding:68px 5%; }
+    }
+    @media(max-width:500px) {
+      .tab-panel.active { grid-template-columns:1fr; }
+      .tab-btn { padding:11px 14px; font-size:.78rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"><img src="logo.png" alt="Pari Gul" style="height:48px;width:auto;vertical-align:middle;"></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-content">
+    <div class="monogram fade-in"><img src="logo.png" alt="Pari Gul Logo" style="width:100%;height:100%;object-fit:contain;border-radius:50%;padding:8px;"></div>
+    <h1 class="hero-name fade-in d1">Pari Gul</h1>
+    <div class="hero-subtitle fade-in d2">Content Writer &amp; SEO Specialist</div>
+    <div class="typewriter-wrap fade-in d2">
+      <span style="color:var(--white-dim)">I am a </span><span id="tw-text"></span><span class="cursor">|</span>
+    </div>
+    <p class="hero-tagline fade-in d3">"Words that rank. Content that converts."</p>
+    <p class="hero-loc fade-in d3"><i class="fas fa-map-marker-alt"></i>Pakistan</p>
+    <div class="btn-group fade-in d4">
+      <a href="#portfolio" class="btn btn-outline">View My Work</a>
+      <a href="#contact" class="btn btn-gold">Hire Me Now</a>
+    </div>
+  </div>
+  <div class="scroll-ind" onclick="scrollTo('#about')">
+    <span>Scroll</span><i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-hdr fade-in">
+    <div class="sec-label">Who I Am</div>
+    <h2 class="sec-title">About Me</h2>
+    <div class="sec-div"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>I'm Pari Gul, a professional content writer and SEO specialist based in Pakistan. With expertise in creating human-written, plagiarism-free content across health, business, finance, tech, and fashion niches, I help brands communicate with clarity and rank higher on Google.</p>
+      <p>Every piece I write is crafted with a deep understanding of search intent, audience behavior, and on-page SEO best practices. I don't just write for search engines — I write for people first, because that's what truly converts readers into customers.</p>
+      <p>I also offer professional English-Urdu translation and accurate data entry services with a fast turnaround, ensuring your projects are delivered on time, every time.</p>
+      <div class="badges">
+        <span class="badge"><i class="fas fa-pen-nib" style="margin-right:6px"></i>500+ Articles Written</span>
+        <span class="badge"><i class="fas fa-shield-alt" style="margin-right:6px"></i>100% Plagiarism Free</span>
+        <span class="badge"><i class="fas fa-search" style="margin-right:6px"></i>SEO Optimized</span>
+      </div>
+    </div>
+    <div class="about-stats fade-in d2">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+        <div><div class="stat-num">500+</div><div class="stat-lbl">Articles &amp; Blog Posts</div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-globe"></i></div>
+        <div><div class="stat-num">5</div><div class="stat-lbl">Content Niches Covered</div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-star"></i></div>
+        <div><div class="stat-num">100%</div><div class="stat-lbl">Client Satisfaction Rate</div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+        <div><div class="stat-num">24hr</div><div class="stat-lbl">Average Turnaround Time</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-hdr fade-in">
+    <div class="sec-label">What I Do Best</div>
+    <h2 class="sec-title">My Skills</h2>
+    <div class="sec-div"></div>
+    <p class="sec-desc">Every skill refined through real-world client projects and hundreds of delivered pieces.</p>
+  </div>
+  <div class="skills-grid" id="skills-grid">
+    <div class="fade-in"><div class="skill-hdr"><span class="skill-name">Content Writing</span><span class="skill-pct">95%</span></div><div class="skill-bg"><div class="skill-fill" data-p="95"></div></div></div>
+    <div class="fade-in d1"><div class="skill-hdr"><span class="skill-name">SEO Writing</span><span class="skill-pct">92%</span></div><div class="skill-bg"><div class="skill-fill" data-p="92"></div></div></div>
+    <div class="fade-in d2"><div class="skill-hdr"><span class="skill-name">Web Content Writing</span><span class="skill-pct">90%</span></div><div class="skill-bg"><div class="skill-fill" data-p="90"></div></div></div>
+    <div class="fade-in d3"><div class="skill-hdr"><span class="skill-name">Translation (English ↔ Urdu)</span><span class="skill-pct">95%</span></div><div class="skill-bg"><div class="skill-fill" data-p="95"></div></div></div>
+    <div class="fade-in"><div class="skill-hdr"><span class="skill-name">Data Entry</span><span class="skill-pct">88%</span></div><div class="skill-bg"><div class="skill-fill" data-p="88"></div></div></div>
+    <div class="fade-in d1"><div class="skill-hdr"><span class="skill-name">Blog Writing</span><span class="skill-pct">93%</span></div><div class="skill-bg"><div class="skill-fill" data-p="93"></div></div></div>
+    <div class="fade-in d2"><div class="skill-hdr"><span class="skill-name">Copywriting</span><span class="skill-pct">85%</span></div><div class="skill-bg"><div class="skill-fill" data-p="85"></div></div></div>
+    <div class="fade-in d3"><div class="skill-hdr"><span class="skill-name">Proofreading &amp; Editing</span><span class="skill-pct">90%</span></div><div class="skill-bg"><div class="skill-fill" data-p="90"></div></div></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="sec-hdr fade-in">
+    <div class="sec-label">Featured Work</div>
+    <h2 class="sec-title">My Portfolio</h2>
+    <div class="sec-div"></div>
+    <p class="sec-desc">25 full-length articles across five niches — researched, SEO-optimized, and human-written.</p>
+  </div>
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="switchTab('health',this)">Health</button>
+    <button class="tab-btn" onclick="switchTab('business',this)">Business</button>
+    <button class="tab-btn" onclick="switchTab('finance',this)">Finance</button>
+    <button class="tab-btn" onclick="switchTab('webdev',this)">Web Development</button>
+    <button class="tab-btn" onclick="switchTab('fashion',this)">Fashion</button>
+  </div>
+
+  <!-- HEALTH -->
+  <div class="tab-panel active" id="tab-health">
+    <div class="article-card fade-in">
+      <span class="art-cat">Health</span>
+      <h3 class="art-title">10 Science-Backed Habits for a Healthier Life in 2025</h3>
+      <div class="art-excerpt">Living a healthier life doesn't require dramatic overhauls or expensive supplements. Researchers have consistently shown that small, consistent habits rooted in science make the biggest difference. Whether you're looking to boost energy, improve mood, or simply live longer, these ten evidence-based habits can transform your wellbeing starting today.</div>
+      <div class="art-full">
+        <p>Living a healthier life doesn't require dramatic overhauls or expensive supplements. Researchers have consistently shown that small, consistent habits — ones rooted in science — make the biggest difference over time. Whether you're looking to boost your energy, improve your mood, or simply live longer, these ten evidence-based habits can transform your wellbeing starting today.</p>
+        <h2>1. Start Your Morning with Water</h2>
+        <p>After seven to eight hours of sleep, your body is naturally dehydrated. Drinking a glass of water first thing in the morning jumpstarts your metabolism, flushes out toxins, and gives your brain the hydration it needs to function clearly. Studies show that even mild dehydration — as little as 1–2% — can impair concentration, memory, and mood throughout the day.</p>
+        <h2>2. Move Your Body Every Day</h2>
+        <p>The World Health Organization recommends at least 150 minutes of moderate-intensity activity per week. But you don't have to hit the gym daily. A brisk 30-minute walk, a bike ride, or even a dance session in your living room counts. Regular physical movement reduces the risk of heart disease, type 2 diabetes, depression, and certain cancers.</p>
+        <h2>3. Prioritize 7–9 Hours of Quality Sleep</h2>
+        <p>Sleep is the body's repair mode. During deep sleep, your brain clears metabolic waste products linked to Alzheimer's disease, your immune system strengthens, and hormones that regulate hunger and stress are balanced. Chronic sleep deprivation has been linked to obesity, cardiovascular disease, and premature aging. It is non-negotiable.</p>
+        <h2>4. Eat More Whole Foods</h2>
+        <p>A diet rich in vegetables, fruits, whole grains, lean proteins, and healthy fats is the foundation of long-term health. The Mediterranean diet — consistently rated the healthiest by nutrition experts — emphasizes olive oil, legumes, fish, and colorful produce. These foods are dense in antioxidants, fiber, and micronutrients that protect your cells from damage.</p>
+        <h2>5. Practice Mindfulness Daily</h2>
+        <p>Even five minutes of mindful breathing per day can lower cortisol levels, reduce anxiety, and improve emotional regulation. Research from Harvard Medical School shows that mindfulness literally changes the structure of the brain — thickening regions associated with attention and self-awareness. Apps like Headspace and Calm have made this habit more accessible than ever.</p>
+        <h2>6. Limit Processed Sugar</h2>
+        <p>Excess sugar contributes to insulin resistance, obesity, tooth decay, and inflammation — a root cause of most chronic diseases. The American Heart Association recommends no more than 25 grams of added sugar per day for women and 36 grams for men. Cutting sugary drinks alone can dramatically improve metabolic health within weeks.</p>
+        <h2>7. Maintain Strong Social Connections</h2>
+        <p>Loneliness is as harmful to your health as smoking 15 cigarettes a day, according to Brigham Young University research. Strong social relationships boost immunity, reduce stress hormones, and help you live longer. Make time for genuine, face-to-face connection — it is one of the most powerful health interventions available to you at zero cost.</p>
+        <h2>8. Get Regular Sunlight (Safely)</h2>
+        <p>Sunlight triggers vitamin D production in the skin — critical for bone health, immune function, and mood. Many people are chronically deficient. Aim for 15–20 minutes of morning sun daily. Apply sunscreen for longer exposure. Vitamin D deficiency is linked to depression, weakened immunity, and bone loss — all preventable with regular, sensible sun exposure.</p>
+        <h2>9. Reduce Screen Time Before Bed</h2>
+        <p>Blue light from phones and computers suppresses melatonin — the hormone that signals sleep time. Putting screens away at least one hour before bed dramatically improves sleep onset and quality. If unavoidable, use blue-light-blocking glasses or enable night mode at the lowest comfortable brightness on all devices.</p>
+        <h2>10. Schedule Preventive Checkups</h2>
+        <p>Prevention is always better — and cheaper — than cure. Annual checkups allow your doctor to catch high blood pressure, prediabetes, or high cholesterol before they become serious. Many chronic diseases are entirely preventable or manageable if detected early. Don't wait until something hurts to see a doctor.</p>
+        <h2>Conclusion</h2>
+        <p>The path to a healthier life in 2025 is paved with consistent, science-backed choices. Start with one or two habits, build them into your routine, then gradually add more. Small changes, repeated daily, compound into extraordinary results over time. Your health is your greatest asset — invest in it wisely.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Health &amp; Wellness</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Health</span>
+      <h3 class="art-title">The Truth About Intermittent Fasting: What Doctors Say</h3>
+      <div class="art-excerpt">Intermittent fasting has taken the wellness world by storm. Social media is filled with success stories of weight loss, improved energy, and better mental clarity. But what does the medical community actually say? Is it a sustainable health strategy, or just another diet trend destined to fade? Here's a balanced, doctor-informed look at what intermittent fasting really does to your body.</div>
+      <div class="art-full">
+        <p>Intermittent fasting has taken the wellness world by storm. Social media is filled with success stories of weight loss, improved energy, and even better mental clarity. But what does the medical community actually say? Is it a sustainable health strategy, or just another diet trend destined to fade? Here's a balanced, doctor-informed look at what intermittent fasting really does to your body.</p>
+        <h2>What Is Intermittent Fasting?</h2>
+        <p>Intermittent fasting (IF) is not a diet in the traditional sense — it doesn't tell you what to eat, but when to eat. The most popular methods include the 16:8 method (fasting for 16 hours, eating within an 8-hour window), the 5:2 method (eating normally five days, restricting to 500–600 calories on two non-consecutive days), and the 24-hour fast (one or two complete fasts per week).</p>
+        <h2>The Science Behind It</h2>
+        <p>When you fast, important metabolic changes occur. Insulin levels drop significantly, facilitating fat burning. Human growth hormone levels increase, benefiting muscle and fat loss. Cellular repair processes (autophagy) are activated, helping clean out damaged cells. Critical genes and molecules related to longevity and disease protection change their expression. These are real, measurable physiological changes.</p>
+        <h2>What Doctors Say About Weight Loss</h2>
+        <p>Most doctors agree that intermittent fasting can be an effective weight management strategy — but not because it's metabolically magical. Dr. Mark Mattson of Johns Hopkins University notes that IF works primarily because it naturally reduces calorie intake. When you have fewer hours to eat, most people consume fewer calories without consciously counting them. The math still matters.</p>
+        <h2>Benefits Beyond Weight Loss</h2>
+        <p>Research suggests IF may improve insulin sensitivity, reducing the risk of type 2 diabetes. Some studies show reductions in inflammatory markers. A 2019 study in The New England Journal of Medicine suggested IF may support brain health and reduce the risk of neurodegenerative diseases like Alzheimer's and Parkinson's, though more long-term human studies are needed.</p>
+        <h2>Who Should Avoid It</h2>
+        <p>Intermittent fasting is not suitable for everyone. Pregnant or breastfeeding women should not restrict calorie intake. People with a history of eating disorders should approach IF with great caution. Individuals with type 1 diabetes who take insulin face dangerous blood sugar risks from fasting. Children, teenagers, and elderly individuals with specific nutritional needs should also avoid strict fasting protocols without medical supervision.</p>
+        <h2>Honest Limitations</h2>
+        <p>Dr. Ethan Weiss, a cardiologist at UCSF, published a 2020 study finding that time-restricted eating offered no significant advantage over regular eating for people who maintained the same calorie intake. This suggests the timing of food matters less than the quality and quantity of what you eat — a finding worth taking seriously before committing to a fasting protocol.</p>
+        <h2>Conclusion</h2>
+        <p>Intermittent fasting is neither a miracle cure nor a dangerous gimmick. For many healthy adults, it offers a practical approach to managing weight and improving metabolic health. But it's not one-size-fits-all. Consult your doctor before starting — especially if you have existing health conditions. The best eating pattern is always the one you can maintain long-term while feeling genuinely well.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Nutrition &amp; Diet</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d2">
+      <span class="art-cat">Health</span>
+      <h3 class="art-title">Mental Health at Work: How to Beat Burnout Before It Beats You</h3>
+      <div class="art-excerpt">Burnout is no longer just a buzzword. The WHO classified it as an occupational phenomenon in 2019 — a syndrome from chronic workplace stress that hasn't been managed. The pandemic accelerated it dramatically, blurring work and personal life. But burnout doesn't have to be your destination. Here's how to recognize the signs and fight back before it takes hold.</div>
+      <div class="art-full">
+        <p>Burnout is no longer just a buzzword. In 2019, the World Health Organization officially classified it as an occupational phenomenon — a syndrome resulting from chronic workplace stress that hasn't been successfully managed. The pandemic accelerated it dramatically, blurring the lines between work and personal life. But burnout doesn't have to be your inevitable destination.</p>
+        <h2>What Does Burnout Actually Feel Like?</h2>
+        <p>Burnout manifests in three ways: emotional exhaustion (feeling drained and overwhelmed), depersonalization (becoming cynical and detached from your work), and a reduced sense of personal accomplishment (doubting your value and abilities). Physical symptoms include chronic headaches, disrupted sleep, frequent illness, and exhaustion that doesn't go away with rest — even after a full weekend off.</p>
+        <h2>Root Causes</h2>
+        <p>Burnout typically develops from a combination of: excessive workload with no recovery time, lack of control over your work, insufficient recognition, poor workplace relationships, a mismatch between your values and your organization's culture, and feeling that your work lacks meaning or fairness. Remove any one of these factors and you significantly reduce burnout risk.</p>
+        <h2>Early Warning Signs</h2>
+        <p>Burnout sneaks up on you. Early signs include dreading Mondays more than usual, losing passion for work you once loved, irritability over minor things, difficulty concentrating, and procrastinating on tasks you previously enjoyed. If these signs are familiar, it's time to act — not dismiss them as normal stress.</p>
+        <h2>Strategies That Actually Work</h2>
+        <h3>Set Firm Boundaries</h3>
+        <p>Define clear working hours and protect them. Stop checking emails after a certain time. Don't answer work calls during personal time. Saying "no" to additional projects when you're at capacity is not weakness — it's professional sustainability. Boundaries are not barriers to productivity; they are prerequisites for it.</p>
+        <h3>Take Your Full Leave</h3>
+        <p>Research consistently shows that vacations improve productivity, creativity, and decision-making. Yet many people leave days unused, feeling guilty for resting. This mindset is damaging. Rest is not a reward for hard work — it is a requirement for sustainable performance at any level.</p>
+        <h3>Build Recovery Into Your Day</h3>
+        <p>The brain is not designed for eight hours of unbroken concentration. Studies suggest working in 90-minute focused blocks followed by 15-minute breaks aligns with natural ultradian rhythms. Even short walks, breathing exercises, or stepping away from screens can reset your nervous system and restore focus meaningfully.</p>
+        <h2>The Employer's Role</h2>
+        <p>Burnout is not solely an individual problem to be solved with self-care. Organizations have a responsibility to create psychologically safe environments, provide reasonable workloads, recognize contributions, and offer flexibility. Companies that invest in employee wellbeing consistently see higher retention, lower absenteeism, and stronger performance metrics.</p>
+        <h2>Conclusion</h2>
+        <p>Burnout is a signal that something needs to change. It's not a sign of weakness — it's a sign you've been strong for too long without adequate support. Pay attention to warning signs, take proactive steps to protect your mental health, and ask for help when you need it. You cannot pour from an empty cup — and the world needs what you have to give.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Mental Health</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in">
+      <span class="art-cat">Health</span>
+      <h3 class="art-title">Gut Health Guide: Why Your Stomach Is Your Second Brain</h3>
+      <div class="art-excerpt">Your digestive system contains over 500 million neurons — more than the spinal cord — forming what researchers call the enteric nervous system. This "second brain" communicates directly with your actual brain in ways that profoundly affect mood, immunity, and cognition. Understanding the gut-brain connection is one of the most important health insights of the past decade.</div>
+      <div class="art-full">
+        <p>You've probably heard the phrase "trust your gut." But scientists have discovered that the gut-brain connection is far more than a figure of speech. Your digestive system contains over 500 million neurons — forming what researchers call the enteric nervous system. This "second brain" communicates directly with your actual brain in ways that affect mood, immunity, and cognition at every moment of every day.</p>
+        <h2>The Gut-Brain Axis</h2>
+        <p>The gut and brain are connected by the vagus nerve — a major communication highway running from your brain stem to your abdomen. About 90% of signals on this nerve travel upward from the gut to the brain, not the other way around. This means your gut is constantly informing your brain, influencing everything from stress response to emotional regulation and even decision-making.</p>
+        <h2>The Microbiome: Your Inner Ecosystem</h2>
+        <p>Your gut houses approximately 100 trillion microorganisms — bacteria, viruses, fungi — collectively known as the microbiome. This ecosystem weighs about 2 kilograms and plays a critical role in digesting food, producing vitamins (including B12 and K), training your immune system, and producing neurotransmitters like serotonin and dopamine. Remarkably, 90–95% of the body's serotonin is produced in the gut — not the brain.</p>
+        <h2>Signs of an Unhealthy Gut</h2>
+        <p>Common signs that your microbiome may be out of balance include frequent bloating or stomach cramps, irregular bowel movements, persistent fatigue, skin issues like eczema or acne, frequent illness, food intolerances, and mood issues including anxiety and depression. These can all be linked to gut dysbiosis — an imbalance between beneficial and harmful gut bacteria that is more common than most people realize.</p>
+        <h2>Foods That Heal Your Gut</h2>
+        <h3>Fermented Foods</h3>
+        <p>Yogurt, kefir, kimchi, sauerkraut, miso, and kombucha are rich in live probiotic bacteria that replenish beneficial gut microbes. Including these regularly can significantly improve microbiome diversity — a key marker of gut health and overall metabolic resilience. Even small daily servings make a measurable difference over time.</p>
+        <h3>Prebiotic Fiber</h3>
+        <p>Probiotics need fuel — that's where prebiotics come in. Garlic, onions, leeks, asparagus, bananas, and oats contain indigestible fibers that feed beneficial bacteria. Aim for 30+ different plant foods per week for maximum microbiome diversity — a metric consistently correlated with better health outcomes in large population studies.</p>
+        <h2>Habits That Harm Your Gut</h2>
+        <p>Overuse of antibiotics kills beneficial bacteria along with harmful ones. Chronic stress disrupts microbiome composition. A diet high in ultra-processed foods starves beneficial bacteria and feeds harmful ones. Lack of sleep also negatively impacts microbial diversity. These factors together explain the gut health crisis affecting much of the modern world.</p>
+        <h2>Conclusion</h2>
+        <p>Your gut is far more than a digestive organ — it's the control center for your immune system, mental health, and overall vitality. Taking care of your gut through diet, stress management, quality sleep, and mindful antibiotic use is one of the highest-return investments you can make in your health. When your gut thrives, so does the rest of you.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Gut Health</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Health</span>
+      <h3 class="art-title">Sleep Better Tonight: 7 Proven Techniques for Deep Rest</h3>
+      <div class="art-excerpt">Sleep is not downtime — it's when your brain consolidates memories, your body repairs damaged tissue, your immune system calibrates, and critical hormones regulate themselves. Chronic sleep deprivation is linked to every major health crisis of our time. The good news: sleep quality can be dramatically improved with the right habits. Here are seven techniques that genuinely work.</div>
+      <div class="art-full">
+        <p>We live in a culture that glorifies busyness and treats sleep as optional. But science tells a different story. Sleep is when your brain consolidates memories, your body repairs tissue, your immune system calibrates, and critical hormones regulate themselves. Chronic sleep deprivation is linked to every major health crisis of our time. Here are seven techniques that actually work.</p>
+        <h2>1. Keep a Consistent Sleep Schedule</h2>
+        <p>Your body runs on a circadian rhythm — a roughly 24-hour internal clock driven by light and darkness. Going to bed and waking at the same time every day, even on weekends, synchronizes this clock. Irregular sleep schedules are one of the most underestimated causes of poor sleep quality, and fixing this single habit can transform how you feel within two weeks.</p>
+        <h2>2. Create a Wind-Down Ritual</h2>
+        <p>Your nervous system needs time to transition from the alertness of the day to the calm state needed for sleep. Spend 30–60 minutes before bed doing relaxing activities: reading a physical book, taking a warm bath or shower, gentle stretching, or journaling. This signals to your brain that sleep is approaching and helps lower cortisol levels progressively.</p>
+        <h2>3. Optimize Your Sleep Environment</h2>
+        <p>Your bedroom should be cool, dark, and quiet. Sleep experts recommend a room temperature of around 18°C (65°F) — a cooler body temperature triggers deeper sleep. Use blackout curtains or a sleep mask to block light, and consider earplugs or white noise if you're sensitive to sound. Your mattress and pillow quality genuinely matter — they are health investments, not luxuries.</p>
+        <h2>4. Eliminate Blue Light Before Bed</h2>
+        <p>Blue light from phones, tablets, and computers mimics daylight and suppresses melatonin production. Put all screens away at least 60 minutes before bed. If you truly cannot avoid screens, switch to night mode and reduce brightness. Blue-light-blocking glasses are a helpful backup. The melatonin disruption from even 15 minutes of bright screen time can delay sleep onset by an hour.</p>
+        <h2>5. Be Strategic About Caffeine</h2>
+        <p>Caffeine's half-life is 5–7 hours, meaning a 3 p.m. coffee still has half its caffeine in your system at 9 p.m. For most people, stopping caffeine after noon dramatically improves sleep quality. This includes not just coffee, but tea, energy drinks, sodas, and even dark chocolate. The cumulative effect of daily afternoon caffeine on sleep quality is significant.</p>
+        <h2>6. Use the 4-7-8 Breathing Technique</h2>
+        <p>Developed by Dr. Andrew Weil, this technique activates the parasympathetic nervous system. Breathe in for 4 counts, hold for 7, exhale for 8. Repeat 4 times. This slows your heart rate, reduces anxiety, and prepares your body for deep sleep. Many people report falling asleep within minutes of using this technique consistently for just a few days.</p>
+        <h2>7. Reserve Your Bed for Sleep Only</h2>
+        <p>If you work in bed, watch TV in bed, or scroll social media in bed, your brain learns to associate the bed with wakefulness. This weakens the sleep association over time, making falling asleep progressively harder. Keep your bed exclusively for sleep (and intimacy) and you'll find your brain automatically starts shifting into sleep mode when you lie down each night.</p>
+        <h2>Conclusion</h2>
+        <p>Quality sleep is a biological necessity. Implementing even two or three of these techniques can dramatically improve how quickly you fall asleep, how deeply you sleep, and how refreshed you feel every morning. Treat sleep with the same priority you give exercise and nutrition, and it will return the favor in every single area of your life.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Sleep &amp; Recovery</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+  </div>
+
+  <!-- BUSINESS -->
+  <div class="tab-panel" id="tab-business">
+    <div class="article-card fade-in">
+      <span class="art-cat">Business</span>
+      <h3 class="art-title">How to Start a Profitable Online Business with Zero Investment</h3>
+      <div class="art-excerpt">The idea that you need capital to start a business is one of the most persistent myths of the entrepreneurial world. In the digital age, your most valuable startup asset is not money — it's knowledge, skills, and consistency. Thousands of people have built six and seven-figure online businesses starting with nothing but a laptop and an internet connection.</div>
+      <div class="art-full">
+        <p>The idea that you need capital to start a business is one of the most persistent myths of the entrepreneurial world. In the digital age, your most valuable startup asset is not money — it's knowledge, skills, and consistency. Thousands of people around the world have built six and seven-figure online businesses starting with nothing but a laptop and an internet connection.</p>
+        <h2>Start with a Marketable Skill</h2>
+        <p>The fastest path to zero-investment income is monetizing something you already know how to do. Writing, graphic design, social media management, video editing, web development, tutoring, virtual assistance — these are skills that businesses desperately need and are willing to pay for. You don't need a portfolio to start — your first client builds your portfolio. Begin with what you have today.</p>
+        <h2>Freelancing: Your Fastest First Dollar</h2>
+        <p>Platforms like Fiverr, Upwork, and Freelancer.com allow you to create a free profile and start offering services immediately. The key to standing out as a new freelancer is specificity. Instead of "I write articles," say "I write SEO-optimized health articles for wellness brands." Niching down dramatically reduces competition and dramatically increases your perceived value to the clients who matter most.</p>
+        <h2>Content Creation: The Long Game</h2>
+        <p>Starting a blog, YouTube channel, or social media account costs nothing. The business model kicks in later through advertising, sponsorships, affiliate marketing, and digital products. This path takes 12–24 months to generate meaningful income, but the business scales without a ceiling — a single well-optimized article can earn passive income for years after it's published.</p>
+        <h2>Affiliate Marketing</h2>
+        <p>Affiliate marketing involves promoting other companies' products and earning a commission on each sale. Amazon Associates, ShareASale, and Commission Junction are all free to join. The key is creating genuinely helpful content — reviews, comparisons, tutorials — that sends qualified buyers to your affiliate links. A well-optimized affiliate article can generate income for years with no ongoing effort required.</p>
+        <h2>Digital Products: Create Once, Sell Forever</h2>
+        <p>E-books, online courses, templates, printables, and stock photos are created once and sold infinitely at zero marginal cost. Tools like Gumroad and Teachable are free to start and take only a small percentage of sales. If you have specialized knowledge in any area — cooking, fitness, accounting, photography — you have the foundation for a highly profitable digital product business.</p>
+        <h2>The Mindset That Makes It Work</h2>
+        <p>Zero-investment businesses require an abundance of the one resource you do have — time and effort. In the early stages, you're trading hours for dollars to build credibility and reputation. The businesses that succeed are not the ones with the best ideas — they're the ones that show up consistently, deliver quality, and serve their audience well over time without giving up at the first obstacle.</p>
+        <h2>Conclusion</h2>
+        <p>Starting an online business with no money is not just possible — it's being done by thousands of people every single day. The barriers to entry have never been lower. What separates successful online entrepreneurs from those who give up is not talent or resources — it's patience, consistency, and a genuine desire to provide value to others. Start today with what you have.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Entrepreneurship</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Business</span>
+      <h3 class="art-title">5 Leadership Qualities That Separate Good Managers from Great Ones</h3>
+      <div class="art-excerpt">Most companies have good managers — people who hit targets, keep teams functional, and do their jobs reliably. But great managers are rare, and their impact is disproportionately large. They don't just manage performance — they transform it. They don't just lead teams — they build leaders. The difference comes down to five specific qualities demonstrated consistently.</div>
+      <div class="art-full">
+        <p>Most companies have good managers — people who hit their targets, keep their teams functional, and do their jobs reliably. But great managers are rare, and their impact is disproportionately large. They don't just manage performance — they transform it. They don't just lead teams — they build leaders. The difference comes down to a specific set of qualities great managers consistently demonstrate.</p>
+        <h2>1. Empathy That Goes Beyond HR Training</h2>
+        <p>Great managers genuinely care about their people as human beings, not just productivity units. They remember important personal details, notice when someone seems off, and create space for honest conversations. Google's Project Oxygen found that the single most important behavior of high-performing managers was "being a good coach" — and at the core of good coaching is genuine empathy that cannot be faked or performance-managed into existence.</p>
+        <h2>2. Communication with Clarity</h2>
+        <p>Poor communication is the number one cause of workplace dysfunction. Great managers communicate expectations clearly, give specific and actionable feedback, and tailor their style to each individual. They practice active listening — not just waiting to speak, but genuinely processing what team members say. They also communicate context: not just "what" they need done, but "why" it matters in the larger picture.</p>
+        <h2>3. Decisive Action Under Uncertainty</h2>
+        <p>Teams look to their managers for direction, especially in ambiguous situations. Great managers are not reckless — they gather relevant information and consult the right people. But they don't get paralyzed by the need for perfect information. The ability to make a good-enough decision and adjust course as new information emerges is far more valuable than waiting for certainty that never arrives.</p>
+        <h2>4. A Compelling and Honest Vision</h2>
+        <p>Great managers connect daily work to bigger meaning. They paint a clear picture of where the team is going and why it matters — and this vision must be authentic. Gallup's research consistently shows that employees whose managers help them understand how their work connects to organizational goals are significantly more engaged, more productive, and far less likely to leave.</p>
+        <h2>5. Radical Accountability — Starting With Themselves</h2>
+        <p>Great managers hold themselves to the same standards they hold their teams. When things go wrong, they ask what they could have done differently rather than looking for someone to blame. They create a culture where mistakes are learning opportunities, not career liabilities. This psychological safety — the belief that you can take risks and be honest without fear of punishment — is Google's highest predictor of team performance.</p>
+        <h2>Conclusion</h2>
+        <p>Great managers are made, not born. These five qualities can all be developed through intentional practice, honest self-reflection, and genuine commitment to the growth of the people you lead. If you're currently a good manager, start here: pick the quality you're weakest in and spend 90 days deliberately developing it. The results will genuinely surprise you.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Leadership</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d2">
+      <span class="art-cat">Business</span>
+      <h3 class="art-title">Why Small Businesses Fail in Year One (And How to Avoid It)</h3>
+      <div class="art-excerpt">Starting a business is exciting. The idea feels brilliant, the energy is high, and the possibilities feel limitless. Yet approximately 20% of small businesses fail in their first year. But these failures aren't random — they follow recognizable patterns that are entirely preventable with the right knowledge and the discipline to act on it early.</div>
+      <div class="art-full">
+        <p>Starting a business is exciting. The idea feels brilliant, the energy is high, and the possibilities feel limitless. Yet approximately 20% of small businesses fail in their first year, and nearly half don't survive to see their fifth anniversary. These failures aren't random — they follow recognizable patterns that are entirely preventable with the right knowledge.</p>
+        <h2>Reason 1: Cash Flow Problems</h2>
+        <p>Cash flow issues are the #1 killer of small businesses — not lack of customers, not bad products. Many businesses fail while technically profitable because they can't pay their bills when due. A customer who owes $10,000 but won't pay for 90 days while you have payroll due in two weeks is a crisis. Maintain 3–6 months of operating expenses as a reserve, invoice promptly, and separate business and personal finances from day one without exception.</p>
+        <h2>Reason 2: Skipping Market Research</h2>
+        <p>Too many entrepreneurs fall in love with their solution before validating that the problem exists at scale. Before investing significant time or money, talk to 20–30 potential customers. Ask about their pain points, current solutions, and willingness to pay. If you can't find people excited enough to pay for your product before it exists, that is critical information that could save you years of wasted effort.</p>
+        <h2>Reason 3: Pricing Too Low</h2>
+        <p>New business owners often undercharge because they lack confidence or mistakenly believe being cheapest is a competitive advantage. It isn't. Competing on price alone attracts the worst clients, destroys your margins, and creates a race to the bottom. Price based on the value you deliver, not cost plus a small margin. Clients who pay properly value your work and are almost always easier to work with.</p>
+        <h2>Reason 4: Neglecting Marketing</h2>
+        <p>"Build it and they will come" is the most expensive lie in business. Marketing is the mechanism through which value is communicated and customers are acquired. Many business owners are so focused on the product that they neglect building awareness. At minimum: a professional website, active social media presence, and a content strategy. Ideally, you're also investing in SEO and email marketing from the beginning.</p>
+        <h2>Reason 5: Wearing Too Many Hats for Too Long</h2>
+        <p>Every founder starts by doing everything. But scaling requires letting go. The inability to delegate keeps businesses permanently small. The moment a task can be done 80% as well by someone else at a lower cost than your effective hourly rate, it should be delegated or outsourced. Your highest-value work should occupy the majority of your time as early as possible.</p>
+        <h2>Conclusion</h2>
+        <p>Business failure is rarely a mystery — it's a predictable outcome of specific, avoidable mistakes. The businesses that survive and thrive are not necessarily the ones with the best products — they're the ones that understand these patterns and guard against them proactively. Study your market relentlessly, manage your cash obsessively, and never stop marketing. These three disciplines alone separate most successful businesses from the rest.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Business Strategy</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in">
+      <span class="art-cat">Business</span>
+      <h3 class="art-title">The Power of Personal Branding in the Digital Age</h3>
+      <div class="art-excerpt">In today's hyperconnected world, your personal brand is not just an asset — it's a necessity. Whether you're an entrepreneur, freelancer, or corporate professional, how you show up online shapes how people perceive your value, expertise, and trustworthiness. Personal branding is not about self-promotion — it's about deliberately communicating who you are and the unique value you bring.</div>
+      <div class="art-full">
+        <p>In today's hyperconnected world, your personal brand is not just an asset — it's a necessity. Whether you're an entrepreneur, a freelancer, or a corporate professional, how you show up online shapes how people perceive your value, expertise, and trustworthiness. Personal branding is not about self-promotion or vanity. It's about deliberately communicating who you are, what you stand for, and the unique value you bring to the table.</p>
+        <h2>What Is a Personal Brand?</h2>
+        <p>Your personal brand is the sum of what people say about you when you're not in the room — and what they find when they Google your name. It encompasses your values, your expertise, your communication style, and the impression you leave on everyone you interact with. A strong personal brand creates trust before a conversation ever happens. It's the difference between being found and being overlooked entirely.</p>
+        <h2>Why Personal Branding Matters More Than Ever</h2>
+        <p>The average person changes careers 5–7 times in their lifetime. Your personal brand travels with you in a way your employer's brand never can. It opens doors to speaking engagements, consulting opportunities, partnerships, and media coverage. LinkedIn's data shows that profiles with complete, professional content receive 40 times more opportunity than incomplete ones. Your digital presence is often your first — and only — impression.</p>
+        <h2>Define Your Niche and Value Proposition</h2>
+        <p>"Marketing expert" is not a personal brand. "Marketing strategist for B2B SaaS startups who helps them grow from zero to their first 100 customers" is a personal brand. Specificity creates magnetism. When you're crystal clear about who you help, with what, and to what outcome, the right opportunities find you. Vague positioning attracts no one in particular.</p>
+        <h2>Create Consistent, Valuable Content</h2>
+        <p>Content is the engine of personal branding. Share your insights, experiences, and expertise through LinkedIn posts, articles, videos, podcasts, or a blog. Consistency matters more than perfection — showing up regularly builds trust and top-of-mind awareness. Give generously without expecting immediate return. The compound effect of helpful content shared over years is genuinely extraordinary.</p>
+        <h2>The Role of Authenticity</h2>
+        <p>The most powerful personal brands are built on authenticity. People can detect inauthenticity from a mile away — especially online. Share your failures alongside successes. Admit what you don't know. Have real opinions. The brands that attract loyal audiences are the ones that feel genuinely human rather than carefully polished marketing constructs designed for maximum approval.</p>
+        <h2>Conclusion</h2>
+        <p>Your personal brand is being built whether you're deliberately shaping it or not. Every post, every interaction, every piece of content you create or don't create contributes to the story others tell about you. Start today: define your niche, show up consistently, and give genuine value. The compounding returns over time will transform your career trajectory in ways you cannot yet fully anticipate.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Personal Branding</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Business</span>
+      <h3 class="art-title">Remote Work Revolution: Managing a Team Across Time Zones</h3>
+      <div class="art-excerpt">The shift to remote work has permanently transformed how teams collaborate. What began as a crisis response during the pandemic has evolved into a new global standard for business operations. Managing a distributed team across time zones presents unique challenges — but also extraordinary opportunities to access global talent and build more resilient organizations.</div>
+      <div class="art-full">
+        <p>The shift to remote work has permanently transformed how teams collaborate. What began as a crisis response has evolved into a new standard for how businesses operate globally. Managing a distributed team across multiple time zones presents unique challenges — but also extraordinary opportunities to access global talent, reduce overhead, and build more resilient organizations.</p>
+        <h2>The Core Challenge: Asynchronous Collaboration</h2>
+        <p>When your team spans time zones, real-time collaboration becomes impossible to sustain as the default. A message sent at 9 a.m. in London arrives at 2 a.m. in Los Angeles. This is not a problem to be solved — it's a constraint to design around. The most effective remote-first companies have built communication systems that work asynchronously, without requiring immediate responses for most interactions.</p>
+        <h2>Build a Documentation-First Culture</h2>
+        <p>In co-located offices, knowledge lives in hallway conversations. In remote teams, undocumented knowledge disappears when people are unavailable. High-performing distributed teams invest heavily in documentation: decisions are written down, processes recorded, meeting notes shared, and a central knowledge base (Notion, Confluence) becomes the single source of truth. This reduces dependency on synchronous communication and enables autonomous work.</p>
+        <h2>Master Asynchronous Communication</h2>
+        <p>Slack, Teams, and similar tools are the backbone of remote communication — but they can become sources of anxiety if not managed well. Set clear norms: which channel types are for what, expected response times (hint: not immediately for most messages), and when async communication should escalate to a call. Tools like Loom for async video updates significantly reduce the need for unnecessary synchronous meetings.</p>
+        <h2>Find and Protect Overlap Hours</h2>
+        <p>Even in globally distributed teams, there are usually some overlapping working hours. These golden hours should be protected for the most important synchronous activities: brainstorming sessions, team check-ins, difficult conversations, and collaborative problem-solving. Rotate meeting times to share the burden of inconvenient hours fairly across the entire team without repeatedly disadvantaging one region.</p>
+        <h2>Build Trust Through Outcomes</h2>
+        <p>Remote management requires a fundamental shift from monitoring activity to trusting outcomes. Micromanaging remote workers destroys trust and morale. Set clear goals and deadlines, give people autonomy over how they work, and evaluate performance on results. Tools like JIRA, Asana, or Monday.com create visibility into progress without surveillance — the right kind of transparency that builds rather than erodes trust.</p>
+        <h2>Conclusion</h2>
+        <p>Managing a distributed team across time zones is genuinely hard — but it's a skill that can be learned and mastered. Organizations that get it right gain access to the best talent in the world, build more resilient operations, and often find their teams more productive than their office-bound counterparts. The key is designing for asynchrony, investing in communication infrastructure, and leading with trust rather than control.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Remote Work</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+  </div>
+
+  <!-- FINANCE -->
+  <div class="tab-panel" id="tab-finance">
+    <div class="article-card fade-in">
+      <span class="art-cat">Finance</span>
+      <h3 class="art-title">Beginner's Guide to Investing: Where to Put Your First $1000</h3>
+      <div class="art-excerpt">The best time to start investing was yesterday. The second best time is today. Yet millions of people wait for the "right moment" that never comes. The truth is, $1,000 is enough to start building real, long-term wealth — if you put it in the right places and understand the fundamentals. Here's exactly where beginners should start their investment journey.</div>
+      <div class="art-full">
+        <p>The best time to start investing was yesterday. The second best time is today. Yet millions of people sit on the sidelines, waiting for the "right moment" that never comes. The truth is, $1,000 is enough to start building real, long-term wealth — if you put it in the right places and understand the fundamentals of smart investing.</p>
+        <h2>Step 1: Build Your Emergency Fund First</h2>
+        <p>Before investing a single dollar, ensure you have 3–6 months of essential expenses in a high-yield savings account. Investing money you might need in the next 12 months is dangerous — markets fluctuate, and being forced to sell during a downturn locks in losses. Your emergency fund is your financial foundation. Without it, one unexpected expense can derail your entire investment strategy.</p>
+        <h2>Step 2: Take Free Money First</h2>
+        <p>If your employer offers a 401(k) match, maximize it before investing anywhere else. An employer match is an immediate 50–100% return on your money — nothing in the market comes close to that. This is the highest-return "investment" available to most people, and yet millions leave this free money on the table every single year by failing to contribute enough to capture the full match.</p>
+        <h2>Step 3: Low-Cost Index Funds</h2>
+        <p>For most beginners, a broad market index fund tracking the S&amp;P 500 or total stock market is the single best first investment. Over any 20-year period in history, the S&amp;P 500 has produced positive returns. Index funds offer diversification across hundreds of companies, extremely low fees (as low as 0.03% annually), and performance that outperforms the majority of actively managed funds over the long term.</p>
+        <h2>The Power of Compound Interest</h2>
+        <p>$1,000 invested at a 10% annual return becomes $1,100 after year one. That $1,100 earns 10% the next year — $110 instead of $100. Over 30 years, that original $1,000 becomes over $17,000 without adding another cent. Add regular monthly contributions and the numbers become life-changing. This is why starting early matters far more than starting with a large amount.</p>
+        <h2>ETFs vs. Individual Stocks</h2>
+        <p>Exchange-traded funds (ETFs) trade like stocks but offer the diversification of a mutual fund. They're excellent vehicles for beginners because they reduce the risk of any single company's poor performance devastating your portfolio. Popular beginner ETFs include VTI (Vanguard Total Stock Market), VOO (Vanguard S&amp;P 500), and VXUS (Vanguard International Stock). These are diversified, low-cost, and time-tested.</p>
+        <h2>What About Cryptocurrency?</h2>
+        <p>Crypto can be part of a diversified portfolio, but should represent no more than 5–10% of a beginner's investments. Bitcoin has dropped 80%+ from peak prices multiple times in its history. Never invest money you cannot afford to lose entirely. Master the fundamentals with traditional asset classes first, then consider crypto with only discretionary funds you can afford to walk away from permanently.</p>
+        <h2>Conclusion</h2>
+        <p>Investing your first $1,000 doesn't require expertise, luck, or timing the market. It requires starting, staying consistent, and keeping costs low. Open a brokerage account today, set up automatic monthly contributions, invest in low-cost index funds, and then get out of your own way. Time in the market beats timing the market — every single time without exception.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Investing</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Finance</span>
+      <h3 class="art-title">How to Create a Monthly Budget That Actually Works</h3>
+      <div class="art-excerpt">Most people have tried budgeting and failed — not because budgeting doesn't work, but because they used a system that was too rigid, too complicated, or misaligned with their actual spending behavior. A budget that works isn't about restriction — it's about intention. Here's a practical, flexible approach to budgeting that you'll genuinely stick to over time.</div>
+      <div class="art-full">
+        <p>Most people have tried budgeting and failed — not because budgeting doesn't work, but because they used a system that was either too rigid, too complicated, or completely misaligned with their actual spending behavior. A budget that works isn't about restriction — it's about intention. Here's a practical, flexible approach to budgeting that you'll actually stick to.</p>
+        <h2>Step 1: Know Your After-Tax Income</h2>
+        <p>Before you can allocate a single dollar, know exactly how much money comes in each month. Include your primary salary, any freelance income (conservative average), and other regular income streams. If your income is variable, use the average of your lowest three recent months as your baseline. This conservative approach prevents the dangerous optimism that trips up so many budgets from the very start.</p>
+        <h2>The 50/30/20 Framework</h2>
+        <p>Popularized by Senator Elizabeth Warren, the 50/30/20 rule divides after-tax income into three categories: 50% for needs (rent, utilities, groceries, insurance, minimum debt payments), 30% for wants (dining out, entertainment, subscriptions, travel), and 20% for savings and additional debt repayment. This framework is an excellent starting point that's simple enough to actually implement without a spreadsheet degree.</p>
+        <h2>Track Every Expense for One Month First</h2>
+        <p>Before creating a budget, spend one full month tracking every expense — coffee, subscriptions, impulse purchases, everything. Most people are genuinely shocked by what they discover: spending $200+ on subscriptions they forgot about, $400+ on dining when they thought it was $150. This awareness is the foundation of effective budgeting. You cannot manage what you don't clearly see.</p>
+        <h2>Use the Right Tools</h2>
+        <p>The best budgeting tool is the one you'll actually use consistently. Apps like YNAB, Mint, or Copilot automatically sync with your bank accounts, categorize transactions, and show where you stand in real time. A simple spreadsheet works perfectly for those who prefer manual control. Some people prefer pen and paper. The tool matters far less than the habit of using it every single week without exception.</p>
+        <h2>Budget for the Unexpected</h2>
+        <p>One of the most common reasons budgets fail is not accounting for irregular expenses: car maintenance, medical bills, annual subscriptions, holiday gifts, home repairs. Create a "sinking fund" — a small monthly contribution to a dedicated savings account for these irregular but entirely predictable expenses. Even $50/month builds $600/year of buffer for costs that only feel unexpected.</p>
+        <h2>Review and Adjust Monthly</h2>
+        <p>A budget is not a set-and-forget document — it's a living financial plan. At the end of every month, review your actual spending against your budget, identify where you went over or under, and adjust the next month accordingly. Life changes: income fluctuates, priorities shift, costs increase. A budget that doesn't adapt to reality is a budget that gets abandoned within 60 days.</p>
+        <h2>Conclusion</h2>
+        <p>The perfect budget doesn't exist — but the right budget for you absolutely does. Start simple, track honestly, and give yourself grace when you overspend. The goal is not perfection; it's awareness and progress. Even imperfect budgeting is infinitely better than no budgeting at all. Start this month, not next month. Your future financial self will be genuinely grateful you did.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Personal Finance</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d2">
+      <span class="art-cat">Finance</span>
+      <h3 class="art-title">Passive Income Ideas That Generate Real Money in 2025</h3>
+      <div class="art-excerpt">The phrase "passive income" gets thrown around so loosely that it's started to sound like a myth. But passive income is real — people all over the world generate meaningful supplementary income from sources requiring minimal ongoing effort. The honest truth: most passive income streams require significant upfront work or capital. Here's a realistic look at what actually works in 2025.</div>
+      <div class="art-full">
+        <p>The phrase "passive income" gets thrown around so loosely it sounds like a myth — or worse, a scam. But passive income is real, it works, and people around the world generate meaningful supplementary income from sources that require minimal ongoing effort. The honest truth: most passive income streams require significant upfront work or capital investment. Here's a realistic look at what actually works in 2025.</p>
+        <h2>1. Dividend Investing</h2>
+        <p>Dividend stocks and dividend-focused ETFs pay you a share of company profits regularly — typically quarterly. A well-diversified dividend portfolio yielding 3–4% annually on $50,000 generates $1,500–$2,000 per year in truly passive income. The challenge is building the capital base. This is a long-term strategy — but the compound growth of reinvested dividends over decades is genuinely extraordinary and requires no active management.</p>
+        <h2>2. Digital Products</h2>
+        <p>E-books, Notion templates, Canva templates, Excel spreadsheets, stock photos, fonts, and online courses are created once and sold thousands of times through platforms like Gumroad, Etsy, or Teachable. A well-positioned digital product in a specific niche can generate $500–$5,000+ per month with virtually zero ongoing cost after initial creation. The upfront investment is time and expertise — not money.</p>
+        <h2>3. Affiliate Marketing Through Content</h2>
+        <p>If you have — or are willing to build — a blog, YouTube channel, or social media audience, affiliate marketing can generate significant passive income. The key is creating genuinely helpful content that ranks in search engines or builds a loyal audience. A blog article ranking on page one of Google for a high-intent keyword can earn affiliate commissions for years after it's written, with zero additional effort.</p>
+        <h2>4. Renting Out Assets</h2>
+        <p>Do you own property, a car, a spare room, storage space, or specialized equipment? Platforms like Airbnb, Turo (car sharing), and Neighbor (storage rental) allow you to monetize assets you already own. This is not entirely passive — you'll manage bookings and maintenance — but the income-to-effort ratio can be excellent for assets that would otherwise sit idle most of the time.</p>
+        <h2>5. Print-on-Demand</h2>
+        <p>Platforms like Redbubble, Merch by Amazon, and Printful allow you to upload designs to products (t-shirts, mugs, phone cases, posters) and earn a commission on every sale without holding inventory or managing fulfillment. With design skills or an affordable designer, this can become a low-maintenance income stream that grows as your catalog expands over time.</p>
+        <h2>6. Licensing Creative Work</h2>
+        <p>Photographers, musicians, and videographers can license their work through stock platforms like Shutterstock, Getty Images, and Musicbed. Each upload becomes a micro-passive income stream. The strategy requires volume — a large catalog of high-quality, commercially useful content — but the income compounds as your portfolio grows without requiring any ongoing active work.</p>
+        <h2>Conclusion</h2>
+        <p>True passive income — where money flows in with zero ongoing effort — is rare. Most passive income streams are better described as "low-effort active income" that required significant upfront investment. But the trade-off is worth it: multiple income streams reduce financial vulnerability and create genuine freedom of choice. Start with one stream, master it, then add another. Build deliberately, build patiently.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Passive Income</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in">
+      <span class="art-cat">Finance</span>
+      <h3 class="art-title">Understanding Cryptocurrency: A Plain English Guide</h3>
+      <div class="art-excerpt">Cryptocurrency has gone from a niche internet curiosity to a multi-trillion dollar global financial phenomenon in little more than a decade. Yet many people still find the concept confusing or too technical to engage with. This guide cuts through the jargon and explains cryptocurrency — what it is, how it works, and what you should know before putting money into it.</div>
+      <div class="art-full">
+        <p>Cryptocurrency has gone from a niche internet curiosity to a multi-trillion dollar global financial phenomenon in little more than a decade. Yet many people still find the concept confusing, intimidating, or simply too technical to engage with. This guide cuts through the jargon and explains cryptocurrency in plain English — what it is, how it works, and what you should know before ever putting money into it.</p>
+        <h2>What Is Cryptocurrency?</h2>
+        <p>At its core, cryptocurrency is digital money — but with a crucial difference from the dollars in your bank account. Traditional money is controlled by governments and central banks, who can print more, adjust interest rates, and freeze accounts. Cryptocurrency operates independently of any central authority, using cryptography (complex mathematical codes) to secure transactions and control the creation of new units of currency.</p>
+        <h2>How Does the Blockchain Work?</h2>
+        <p>The blockchain is the technology that makes cryptocurrency possible. Think of it as a public ledger — like an enormous spreadsheet — that records every transaction ever made with a particular cryptocurrency. This ledger is not stored in one place; it's duplicated across thousands of computers worldwide simultaneously. To alter a record, you'd have to change it on every copy at once — practically impossible. This decentralization makes the blockchain secure and resistant to any form of tampering.</p>
+        <h2>Bitcoin: The Original</h2>
+        <p>Bitcoin was created in 2009 by the pseudonymous Satoshi Nakamoto — the first cryptocurrency and largest by market capitalization. Bitcoin's supply is mathematically capped at 21 million coins. This enforced scarcity is why Bitcoin is often called "digital gold." Bitcoin transactions are verified by "mining," where computers compete to solve complex mathematical problems in exchange for newly created Bitcoin as a reward.</p>
+        <h2>Ethereum and Smart Contracts</h2>
+        <p>Ethereum, launched in 2015, extended blockchain technology beyond simple currency. Its key innovation is "smart contracts" — self-executing agreements written in code that automatically enforce their terms when conditions are met, without needing a lawyer or bank. This has enabled an entirely new ecosystem of decentralized applications (DApps), decentralized finance (DeFi), and non-fungible tokens (NFTs) that operate without central intermediaries.</p>
+        <h2>The Risks You Cannot Ignore</h2>
+        <p>Cryptocurrency is one of the most volatile asset classes in history. Bitcoin has dropped more than 80% from peak prices on multiple occasions. Scams and hacks are rampant — billions of dollars have been stolen through exchange failures and fraudulent projects. There is no FDIC insurance for crypto: if an exchange collapses or you lose your private key, your funds may be completely unrecoverable. Regulatory uncertainty adds another significant layer of risk.</p>
+        <h2>Conclusion</h2>
+        <p>Cryptocurrency represents a genuinely novel technological and financial development with both extraordinary potential and significant risks. It is neither the inevitable future of all money nor a simple scam — the truth is more nuanced. Approach it with education, healthy skepticism about hype, strict risk management, and never more capital than you can afford to lose entirely. Understand what you're buying before you buy it.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Cryptocurrency</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Finance</span>
+      <h3 class="art-title">How to Get Out of Debt Fast Using the Snowball Method</h3>
+      <div class="art-excerpt">Debt is one of the most emotionally and financially draining experiences a person can go through. The weight of multiple monthly payments and seemingly endless interest charges can feel overwhelming. But there's a proven, psychologically powerful strategy that has helped millions systematically eliminate debt — and it starts with your smallest balance, not your largest.</div>
+      <div class="art-full">
+        <p>Debt is one of the most emotionally and financially draining experiences a person can go through. The weight of multiple monthly payments, mounting interest charges, and the seemingly endless horizon of debt-free living can feel overwhelming. But there's a proven, psychologically powerful strategy that has helped millions of people systematically eliminate debt — and it starts with your smallest balance.</p>
+        <h2>What Is the Debt Snowball Method?</h2>
+        <p>The debt snowball method, popularized by Dave Ramsey, is a debt elimination strategy where you pay off debts in order from smallest balance to largest, regardless of interest rate. Make minimum payments on all debts, then throw every extra dollar at your smallest debt until it's gone. When eliminated, take that payment and add it to the minimum payment of your next-smallest debt — creating a "snowball" that accelerates as it grows.</p>
+        <h2>Why It Works: The Psychology of Quick Wins</h2>
+        <p>From a mathematical standpoint, targeting your highest interest rate debt first (the "debt avalanche") saves more money. But humans are not purely rational, and research confirms that the emotional boost of eliminating a debt entirely — however small — creates motivation and momentum. Studies by Northwestern University researchers found that focusing on one debt at a time significantly improved the likelihood of becoming debt-free compared to spreading payments equally across all debts.</p>
+        <h2>Step-by-Step Execution</h2>
+        <h3>Step 1: List All Debts</h3>
+        <p>Write down every debt — credit cards, personal loans, medical bills, car loans, student loans — ordered from smallest to largest balance. Include the balance, minimum payment, and interest rate for each. This complete picture is often sobering but essential — you cannot systematically attack something you haven't fully faced and clearly written down.</p>
+        <h3>Step 2: Build a Starter Emergency Fund</h3>
+        <p>Before attacking debt aggressively, save $1,000 as a mini emergency fund. This prevents you from going deeper into debt when an unexpected expense inevitably arises. It's a financial buffer, not a final goal — the real savings build after you're completely debt-free and have your full income to direct toward wealth-building.</p>
+        <h3>Step 3: Find Extra Money</h3>
+        <p>The speed of your debt payoff depends entirely on how much extra money you can throw at it. Audit every subscription, cut non-essential spending temporarily, and look for ways to generate additional income — overtime, freelance work, selling unused items. Every extra $100 per month matters significantly when concentrated on a single target.</p>
+        <h3>Step 4: Attack, Celebrate, Roll</h3>
+        <p>Direct all extra cash to your smallest debt while paying minimums on everything else. When it's gone — celebrate genuinely. Then roll that full payment to the next debt on your list. Your total monthly payment stays the same, but the concentration of firepower on a single debt accelerates elimination dramatically with each successive debt you knock out.</p>
+        <h2>Conclusion</h2>
+        <p>Getting out of debt is not easy — but it is simple. The snowball method gives you a clear system, emotional wins to stay motivated, and a proven track record of success. List your debts, cut expenses, find extra income, and start eliminating. The first payoff is the hardest. By the time you reach your last debt, the snowball is massive and the finish line is finally, genuinely within reach.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Debt Management</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+  </div>
+
+  <!-- WEB DEV -->
+  <div class="tab-panel" id="tab-webdev">
+    <div class="article-card fade-in">
+      <span class="art-cat">Web Dev</span>
+      <h3 class="art-title">HTML vs CSS vs JavaScript: A Beginner's Complete Guide</h3>
+      <div class="art-excerpt">If you've ever wondered how websites actually work — what creates the text you're reading, why the page looks the way it does, and what makes buttons click — the answer comes down to three languages: HTML, CSS, and JavaScript. These are the fundamental building blocks of every website you've ever visited, and understanding what each does is the essential first step.</div>
+      <div class="art-full">
+        <p>If you've ever wondered how websites actually work — what creates the text you're reading, why the page looks the way it does, and what makes buttons click and menus open — the answer comes down to three languages: HTML, CSS, and JavaScript. These three technologies are the fundamental building blocks of every website you've ever visited, and understanding what each one does is the first step toward learning web development.</p>
+        <h2>HTML: The Structure</h2>
+        <p>HTML stands for HyperText Markup Language. It's not a programming language — it's a markup language that describes the structure and content of a web page using elements called "tags." When you write HTML, you're telling the browser: this is a heading, this is a paragraph, this is an image, this is a link. HTML is the skeleton of every web page. Without it, there is nothing to see at all.</p>
+        <h2>CSS: The Presentation</h2>
+        <p>CSS stands for Cascading Style Sheets. It controls how HTML elements look — their colors, fonts, sizes, spacing, layouts, and animations. Without CSS, every website would look like a plain document with black text on a white background. CSS works by selecting HTML elements and applying visual rules to them. Modern CSS is extraordinarily powerful, capable of creating complex animations, responsive layouts, and sophisticated visual designs without a single line of JavaScript.</p>
+        <h2>JavaScript: The Behavior</h2>
+        <p>JavaScript is a full programming language that makes web pages interactive and dynamic. While HTML and CSS are static, JavaScript responds to user actions, manipulates page content in real time, fetches data from servers, validates forms, creates animations, and builds complete web applications. Every time you see a website respond to your actions — a menu sliding open, a form validating your email, a map moving when you drag it — JavaScript is responsible.</p>
+        <h2>How They Work Together</h2>
+        <p>Think of it this way: HTML is the building's structure (walls, floors, rooms), CSS is the interior design (paint, furniture, lighting), and JavaScript is the electricity (making things turn on, respond, and interact). A professionally built website uses all three in concert: semantic HTML for accessible structure, CSS for visual polish and responsive design, and JavaScript for interactive functionality and dynamic content loading.</p>
+        <h2>Where to Start Learning</h2>
+        <p>The learning order matters: start with HTML (1–2 weeks), then CSS (2–4 weeks for basics, months to master), then JavaScript (the most complex but most powerful). Free resources like freeCodeCamp, MDN Web Docs, and The Odin Project provide excellent structured curricula. The most important thing is building actual projects — not just following tutorials passively. Real projects reveal real problems that tutorials never simulate.</p>
+        <h2>Beyond the Basics</h2>
+        <p>Once comfortable with HTML, CSS, and JavaScript, the next step is a framework. React, Vue, and Angular allow you to build complex, scalable web applications far more efficiently than raw JavaScript. For the backend, Node.js, Python, or PHP are popular entry points. But all of this comes after mastering the fundamentals — there are genuinely no shortcuts worth taking in web development.</p>
+        <h2>Conclusion</h2>
+        <p>HTML, CSS, and JavaScript are the holy trinity of web development. Each plays a distinct and irreplaceable role: HTML for structure, CSS for style, JavaScript for behavior. Understanding how these three languages work individually and together is the foundation upon which every web developer builds their career. Start with HTML today, and the rest will naturally follow from there.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Web Dev Basics</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Web Dev</span>
+      <h3 class="art-title">Why Every Business Needs a Website in 2025</h3>
+      <div class="art-excerpt">In 2025, not having a business website is like not having a phone number in 1995. Social media profiles are not websites. A Google Business listing is not a website. These are rented spaces on platforms you don't control. A website is your owned digital asset, your 24/7 salesperson, and your most credible business credential — and it works for you while you sleep.</div>
+      <div class="art-full">
+        <p>In 2025, not having a business website is like not having a phone number in 1995 — technically possible, but professionally damaging and commercially limiting in ways most business owners don't fully appreciate. Social media profiles are not websites. A Google Business listing is not a website. These are rented spaces on platforms you don't control. A website is your owned digital asset and your most credible business credential.</p>
+        <h2>Your Customers Expect It</h2>
+        <p>Before making any significant purchasing decision, 81% of consumers research businesses online. If they can't find you — or if your website looks outdated or unprofessional — many will move on to a competitor who has a polished online presence. In 2025, your website is usually the first impression you make. A well-designed website communicates legitimacy and attention to detail before a single word is exchanged.</p>
+        <h2>You Own It — Platforms Don't</h2>
+        <p>Facebook, Instagram, and TikTok have changed algorithms, restricted organic reach, and been threatened with bans overnight without warning. Businesses built entirely on social media platforms are building on rented land. When the algorithm changes, visibility collapses. A website with strong SEO is a durable, owned asset. Your content, your audience, your email list — these belong to you, not to any platform.</p>
+        <h2>It Works While You Sleep</h2>
+        <p>A well-built website generates leads, answers customer questions, and processes sales or bookings 24 hours a day, 7 days a week, without any ongoing labor cost. This is impossible to replicate with a social media profile alone. For service businesses especially, a professional website with a booking system, testimonials, and FAQ sections dramatically reduces time spent on repetitive sales calls and emails.</p>
+        <h2>SEO: The Compounding Advantage</h2>
+        <p>Search engine optimization gets your website found by people actively searching for what you offer. A business ranking #1 on Google for their primary service keyword gets free, high-intent traffic from people who need their service right now. Building this visibility takes time — typically 6–12 months — but once established, it becomes a compounding asset that's increasingly difficult for competitors to dislodge over time.</p>
+        <h2>E-Commerce: Selling Without Borders</h2>
+        <p>A website with e-commerce functionality allows you to sell products and services to anyone in the world, at any time, with no physical storefront required. Platforms like Shopify and WooCommerce make this accessible to businesses of any size. The global e-commerce market continues growing at double-digit percentages annually — businesses without an online store are leaving significant revenue on the table every single day.</p>
+        <h2>Conclusion</h2>
+        <p>A professional website in 2025 is not a nice-to-have — it's a fundamental business asset. If you don't have one, you're invisible to the majority of your potential customers before you ever get the chance to make your case. If you do have one but it's outdated, it may be actively harming your business reputation. Invest in your digital presence — it will compound in value for as long as your business operates.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Digital Business</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d2">
+      <span class="art-cat">Web Dev</span>
+      <h3 class="art-title">Top 10 Web Design Trends Dominating This Year</h3>
+      <div class="art-excerpt">Web design evolves with technology, cultural shifts, and changing user expectations. What felt fresh two years ago can look dated today. Staying current with design trends isn't about chasing novelty — it's about understanding how design can better serve users and communicate brand identity in a rapidly changing digital landscape. Here are the ten trends shaping the visual internet.</div>
+      <div class="art-full">
+        <p>Web design is never static. It evolves with technology, cultural shifts, and changing user expectations. Staying current with design trends isn't about chasing novelty — it's about understanding how design can better serve users and communicate brand identity in a rapidly changing digital landscape. Here are the ten web design trends shaping the visual internet this year.</p>
+        <h2>1. Bento Grid Layouts</h2>
+        <p>Inspired by Apple's product pages and the Japanese bento box aesthetic, bento grid layouts organize content into asymmetric, modular cards of varying sizes. This creates visual hierarchy, allows diverse content types to coexist cleanly, and feels fresh without being disorienting. It's particularly effective for portfolios, product features, and SaaS landing pages with varied content types.</p>
+        <h2>2. Bold, Oversized Typography</h2>
+        <p>Large, expressive type used as both communication and visual design element continues to dominate. Brands use font size not just for hierarchy but as a design statement — taking a single word or phrase to viewport-filling scale. Variable fonts, allowing smooth animation between weights and widths, are making this trend more dynamic and sophisticated with each passing month.</p>
+        <h2>3. AI-Personalized Experiences</h2>
+        <p>AI is enabling websites to dynamically adapt content, imagery, CTAs, and even copy based on user behavior, location, and preferences. What you see on a website increasingly reflects who you are. This personalization improves conversion rates and creates more relevant experiences — but also raises important questions about privacy that forward-thinking designers are actively navigating.</p>
+        <h2>4. Micro-Animations and Scroll Effects</h2>
+        <p>Subtle animations responding to user interactions — hover states that reveal content, scroll-triggered reveals, elements that animate as they enter the viewport — have become expected rather than optional. When done with restraint, micro-animations make interfaces feel alive, responsive, and polished. When overdone, they become obstacles. The best practitioners know exactly where the line falls.</p>
+        <h2>5. Dark Mode as Default</h2>
+        <p>Many brands now launch with dark mode as their primary design, not a secondary option. Dark backgrounds reduce eye strain in low-light conditions, make colors and images pop dramatically, and convey sophistication and premium quality that light backgrounds sometimes struggle to achieve for certain brands and industries, particularly in tech and entertainment.</p>
+        <h2>6. Glassmorphism 2.0</h2>
+        <p>The frosted glass aesthetic — semi-transparent elements with blur effects — has matured into a refined design technique for cards, modals, and navigation elements. Modern glassmorphism uses depth, shadow, and layering to create beautiful, three-dimensional interfaces that feel light and luxurious simultaneously without overwhelming the content they present.</p>
+        <h2>7. Three-Dimensional Elements</h2>
+        <p>Advances in WebGL and Three.js have made 3D elements accessible to a broader range of projects. From 3D product viewers to interactive background scenes, depth and dimensionality are becoming meaningful tools in the web designer's toolkit rather than performance-heavy novelties reserved only for the largest budgets and most ambitious agencies.</p>
+        <h2>8. Accessibility as Design Foundation</h2>
+        <p>Accessibility — designing for users with visual, motor, cognitive, and auditory differences — is moving from compliance checkbox to genuine design principle. The best designers in 2025 understand that accessible design is universally better design: higher contrast, clearer hierarchy, keyboard navigability, and semantic HTML benefit every user, not just those with disabilities or limitations.</p>
+        <h2>9. Sustainability-Forward Design</h2>
+        <p>As environmental consciousness grows, sustainable web design focuses on building websites that consume less energy, load faster, and use server resources more efficiently. This includes optimized images, minimal JavaScript, green hosting providers, and clean, uncluttered design that reduces data transfer. Good for the planet; great for performance metrics across the board.</p>
+        <h2>10. Voice User Interface Integration</h2>
+        <p>With the proliferation of voice assistants, forward-thinking designers are optimizing sites for voice search and building voice navigation into their interfaces. This trend will accelerate as users become more comfortable directing digital experiences through natural language — a fundamental shift in how humans interact with information online.</p>
+        <h2>Conclusion</h2>
+        <p>The most effective web design borrows strategically from trends while staying anchored in unchanging principles: clarity, speed, accessibility, and purposeful visual hierarchy. Use these trends as inspiration for enhancing your design vocabulary, not as mandates to follow blindly. The goal is always experiences that feel effortless for users and authentically representative of the brand they encounter.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Web Design</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in">
+      <span class="art-cat">Web Dev</span>
+      <h3 class="art-title">How to Improve Your Website's Loading Speed by 80%</h3>
+      <div class="art-excerpt">Website speed is not just a technical metric — it's a business metric. Google has made page speed a direct ranking factor. Studies show that 40% of users abandon a website taking more than 3 seconds to load. Most speed problems are fixable without a complete rebuild — just systematic optimization applied in the right order with the right tools and priorities.</div>
+      <div class="art-full">
+        <p>Website speed is not just a technical metric — it's a business metric. Google has made page speed a direct ranking factor. Studies show that 40% of users abandon a website that takes more than 3 seconds to load. Amazon calculated that a one-second delay in page load time would cost them $1.6 billion in annual sales. The good news: most speed problems are fixable without a complete rebuild.</p>
+        <h2>Start with a Baseline Measurement</h2>
+        <p>Before optimizing anything, measure where you are. Google PageSpeed Insights (free, at pagespeed.web.dev) gives you a performance score and specific, prioritized recommendations. GTmetrix and WebPageTest provide additional detail. Run your site through these tools and note your current scores — you'll need them to measure the impact of each optimization you implement going forward.</p>
+        <h2>1. Optimize Your Images</h2>
+        <p>Images are the #1 cause of slow websites. Uncompressed images that are 3MB each will cripple load times even on fast connections. Compress all images using TinyPNG, Squoosh, or ImageOptim before uploading. Convert images to next-gen formats (WebP, AVIF) which offer 25–50% smaller file sizes than JPEG or PNG at equivalent visual quality. Implement lazy loading for images below the fold.</p>
+        <h2>2. Enable Browser Caching</h2>
+        <p>Browser caching tells a visitor's browser to store static files locally after the first visit, so subsequent visits load much faster because the browser doesn't have to re-download unchanged files. Most web hosts allow you to set cache headers via .htaccess or nginx.conf. Plugins like W3 Total Cache or WP Rocket handle this automatically for WordPress sites with minimal configuration required.</p>
+        <h2>3. Use a Content Delivery Network</h2>
+        <p>A CDN distributes your website's static files across servers in multiple geographic locations. When a user requests your site, files are served from the server closest to them, dramatically reducing latency. Cloudflare offers a free CDN tier that significantly improves global load times for most websites. This single change alone can reduce load times by 30–50% for international visitors without any code changes.</p>
+        <h2>4. Minify CSS, JavaScript, and HTML</h2>
+        <p>Minification removes unnecessary characters from code — spaces, line breaks, comments — without changing functionality. A 200KB CSS file might become 150KB after minification. Tools like UglifyJS, CleanCSS, and HTMLMinifier handle this automatically. Most modern build tools (Webpack, Vite, Parcel) minify code automatically in production builds as part of their standard optimization pipeline.</p>
+        <h2>5. Choose High-Performance Web Hosting</h2>
+        <p>No amount of optimization can overcome a slow shared hosting server. Shared hosting — where your website sits on a server with hundreds of others — is often the primary bottleneck for slow sites. VPS hosting, managed WordPress hosting (Kinsta, WP Engine, Cloudways), or modern static hosting (Netlify, Vercel) offer significantly better performance for sites that have outgrown budget shared hosting plans.</p>
+        <h2>6. Defer Non-Critical JavaScript</h2>
+        <p>By default, browsers stop parsing HTML when they encounter a script tag, execute the script, then continue. This "render-blocking" behavior significantly delays page display. Adding the "defer" attribute to non-critical script tags tells the browser to download them in the background and execute them after the HTML is parsed, allowing visible content to render much faster for the user.</p>
+        <h2>Conclusion</h2>
+        <p>An 80% speed improvement is achievable for most websites without a complete rebuild — just systematic optimization. Start with your biggest wins (image optimization and CDN), then work through the other improvements systematically. Run your site through PageSpeed Insights after each change to measure progress. A fast website is better for users, better for SEO, and better for your bottom line. There is genuinely no downside to speed optimization.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Web Performance</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Web Dev</span>
+      <h3 class="art-title">SEO for Developers: Technical Tips to Rank on Google Page 1</h3>
+      <div class="art-excerpt">Content writers talk about keywords. UX designers talk about user experience. But developers hold largely underappreciated power over a website's search engine performance. Technical SEO — the implementation of site architecture, code quality, and server behavior — can make or break even the best content strategy. Here's what developers need to know to give their sites a genuine competitive advantage.</div>
+      <div class="art-full">
+        <p>Content writers talk about keywords. UX designers talk about user experience. But developers hold a largely underappreciated power over a website's search engine performance. Technical SEO — the implementation of site architecture, code quality, and server behavior in ways that search engines can read and reward — can make or break even the best content strategy.</p>
+        <h2>1. Implement Semantic HTML</h2>
+        <p>Search engines read your HTML to understand content structure and hierarchy. Semantic HTML — using h1 for main headings, h2/h3 for subheadings, article for articles, nav for navigation, and main for main content — communicates structure clearly. There should be exactly one h1 per page. Heading hierarchy should be logical and sequential. These rules seem simple, but violations are extremely common in production sites.</p>
+        <h2>2. Core Web Vitals Are Ranking Factors</h2>
+        <p>Google's Core Web Vitals — Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS) — directly affect search rankings. LCP measures how quickly the main content loads (target: under 2.5 seconds). FID measures responsiveness to user interactions (target: under 100ms). CLS measures visual stability during load (target: under 0.1). Monitor these in Google Search Console and optimize aggressively.</p>
+        <h2>3. Structured Data (Schema Markup)</h2>
+        <p>Structured data helps Google understand the context of your content and powers rich results — review stars, FAQ dropdowns, recipe cards, event dates, and product prices appearing directly in search results. Implementing Article, Product, FAQ, BreadcrumbList, and Organization schema using JSON-LD (Google's preferred format) can significantly increase click-through rates even without improving your actual ranking position.</p>
+        <h2>4. XML Sitemap and Robots.txt</h2>
+        <p>An XML sitemap tells search engines what pages exist on your site and when they were last updated, ensuring important pages are crawled and indexed. A robots.txt file tells crawlers which parts to ignore. Both should be present on every professionally built site. Submit your sitemap to Google Search Console to accelerate indexing of new content — especially important for large or frequently updated sites.</p>
+        <h2>5. HTTPS is Non-Negotiable</h2>
+        <p>HTTPS is a confirmed Google ranking signal. Browsers flag HTTP sites as "Not Secure," which destroys user trust immediately. SSL certificates are free through Let's Encrypt and trivially easy to implement through most hosts. There is no legitimate reason for any website to still be running on HTTP in 2025. The migration is straightforward, the benefit is real, and the cost is zero.</p>
+        <h2>6. Mobile-First Implementation</h2>
+        <p>Google uses mobile-first indexing — meaning it uses the mobile version of your site as the primary basis for ranking. Your mobile experience must be as complete and performant as your desktop experience. This means responsive layouts, touch-friendly interface elements (minimum 44x44px tap targets), legible font sizes without zooming, and no content that's hidden on mobile but visible on desktop.</p>
+        <h2>7. Internal Linking Architecture</h2>
+        <p>Internal links distribute ranking power across your site and help search engines discover and understand relationships between your pages. A flat architecture — where most pages are accessible within 3 clicks from the homepage — is preferred over deep, complex structures. Use descriptive anchor text for internal links rather than "click here" — this reinforces keyword relevance and improves both SEO and user experience simultaneously.</p>
+        <h2>Conclusion</h2>
+        <p>Technical SEO is the foundation on which all other SEO efforts rest. The best content in the world won't rank if Google can't crawl, parse, and index it correctly. As a developer, you have the power to build SEO-ready sites from the ground up — not as an afterthought, but as a core feature. Implement these practices from day one, and your sites will have a structural advantage that compounds over years.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>9 min read</span><span><i class="fas fa-tag"></i>Technical SEO</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+  </div>
+
+  <!-- FASHION -->
+  <div class="tab-panel" id="tab-fashion">
+    <div class="article-card fade-in">
+      <span class="art-cat">Fashion</span>
+      <h3 class="art-title">Capsule Wardrobe 101: How to Look Good with Less Clothes</h3>
+      <div class="art-excerpt">Every morning, millions of people stand in front of overflowing wardrobes thinking "I have nothing to wear." The paradox is that most of us own too many clothes — not too few. The solution is not a bigger wardrobe or another shopping trip. It's the capsule wardrobe: a carefully curated collection of versatile, high-quality pieces that work beautifully together and eliminate decision fatigue entirely.</div>
+      <div class="art-full">
+        <p>Every Sunday morning, millions of people stand in front of overflowing wardrobes thinking "I have nothing to wear." The paradox is that most of us own too many clothes — not too few. The solution is not a bigger wardrobe, more storage, or another shopping trip. It's the capsule wardrobe: a carefully curated collection of versatile, high-quality pieces that work beautifully together, eliminating decision fatigue while elevating your style.</p>
+        <h2>What Is a Capsule Wardrobe?</h2>
+        <p>The concept was introduced by London boutique owner Susie Faux in the 1970s and later popularized by designer Donna Karan. A capsule wardrobe is typically 25–50 carefully selected items — including clothes, shoes, and accessories — that you genuinely love, that fit you well, and that can be mixed and matched to create a wide variety of outfits. The goal is quality over quantity: fewer pieces, but each one earning its rightful place.</p>
+        <h2>The Core Principles</h2>
+        <h3>Neutrals as Foundation</h3>
+        <p>A capsule wardrobe is built on neutral colors — navy, white, gray, black, camel, beige — that work with virtually everything. Neutrals create the blank canvas. Once your foundation is established, you add personality through a few carefully chosen accent pieces in colors or patterns you genuinely love and reach for regularly, not ones you bought on impulse and rarely touch.</p>
+        <h3>Versatility Above All</h3>
+        <p>Before any item earns a place in your capsule, ask: can this work for at least three different occasions? A good white button-down shirt works to the office (tucked in with trousers), on a date (half-tucked with jeans), and on weekends (open over a T-shirt). Items that can only be worn one way are wardrobe dead weight that occupy space while contributing nothing to your daily dressing options.</p>
+        <h2>The Great Edit: Clearing Space</h2>
+        <p>Building a capsule wardrobe starts with ruthlessly editing what you already own. Hold each item and ask whether you genuinely love it, whether it fits you perfectly right now, and whether you've worn it in the past year. If the answer to any of these is no, it goes. Donate, sell on Vinted or Depop, or recycle — but clear the space. You cannot build something intentional in a cluttered wardrobe.</p>
+        <h2>Quality vs. Quantity</h2>
+        <p>A capsule wardrobe philosophy reorients your purchasing behavior: instead of buying 10 cheap items, you buy 2 quality items. A well-made pair of jeans at $150 will outlast and outperform five pairs of $30 jeans in both durability and appearance. Over time, this approach actually saves money — and consistently produces dramatically better style outcomes for every person who commits to it.</p>
+        <h2>Conclusion</h2>
+        <p>A capsule wardrobe is not a punishment — it's a liberation. Less time deciding what to wear, less money spent on impulse purchases, less wardrobe chaos, and paradoxically, more style. Start your edit this weekend. Remove everything you haven't worn in a year. Identify your core neutrals. Fill the gaps with quality, versatile pieces. Within a month, getting dressed in the morning will feel genuinely transformative.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Style &amp; Fashion</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Fashion</span>
+      <h3 class="art-title">Sustainable Fashion: Why Your Clothes Are Hurting the Planet</h3>
+      <div class="art-excerpt">Fashion is the second most polluting industry on Earth. Every year, it produces 92 million tonnes of textile waste. Dyeing processes contribute 20% of industrial water pollution globally. A single pair of jeans requires 7,500 liters of water to produce. The clothes you wear carry an environmental price tag far heavier than their retail cost — and most consumers have no idea.</div>
+      <div class="art-full">
+        <p>Fashion is the second most polluting industry on Earth — trailing only the oil industry. Every year, the fashion industry produces 92 million tonnes of textile waste. Dyeing and finishing processes contribute 20% of industrial water pollution globally. A single pair of jeans requires 7,500 liters of water to produce — equivalent to seven years of drinking water for one person. The clothes you wear carry an environmental price tag far heavier than their retail cost.</p>
+        <h2>The Fast Fashion Problem</h2>
+        <p>Fast fashion — producing high volumes of rapidly changing, low-cost trends — has fundamentally changed how people relate to clothes. Brands like Zara and H&amp;M once produced two collections per year. Today, some ultra-fast fashion brands like Shein produce thousands of new items per day. This speed requires corners to be cut: cheaper materials, accelerated production, lower quality, and minimal environmental oversight at every stage of the supply chain.</p>
+        <h2>The Human Cost</h2>
+        <p>Behind the $5 T-shirt is a supply chain that frequently exploits the world's most vulnerable workers. The 2013 Rana Plaza disaster in Bangladesh — where a garment factory collapse killed over 1,100 workers — exposed the true human cost of fast fashion at its most devastating. Many garment workers earn below living wages, work in unsafe conditions, and are denied basic rights. When you buy very cheap clothing, someone somewhere is absorbing the true cost the price tag doesn't reflect.</p>
+        <h2>The Carbon Footprint</h2>
+        <p>The fashion industry is responsible for approximately 10% of global carbon emissions — more than aviation and shipping combined. Synthetic fabrics like polyester are derived from fossil fuels and can take hundreds of years to decompose in landfill. The manufacturing, transportation, and even the washing of synthetic clothing all contribute to a significant environmental footprint that most consumers never consciously consider when making purchases.</p>
+        <h2>Building a More Sustainable Wardrobe</h2>
+        <h3>Buy Less, Choose Better</h3>
+        <p>The most sustainable garment is the one that already exists in your wardrobe. Before buying anything new, ask whether you truly need it. When you do buy, invest in quality that will last years rather than weeks. The math is simple: one $80 shirt worn 100 times is far more sustainable than five $16 shirts worn 10 times each.</p>
+        <h3>Shop Second-Hand First</h3>
+        <p>Thrift stores, vintage shops, Depop, Vinted, ThredUp, and Poshmark offer enormous selections of quality clothing at fraction of original prices — while keeping garments in circulation and out of landfill. Second-hand shopping has shed its stigma and is now a first-choice shopping destination for style-conscious, sustainability-aware consumers of all ages and income levels across the world.</p>
+        <h3>Care for What You Own</h3>
+        <p>Washing in cold water, line drying, repairing rather than replacing, and proper storage all extend garment lifespan dramatically. Most textile experts agree that extending a garment's life by just nine months reduces its environmental impact by 20–30%. The most sustainable fashion choice you can make today is learning to properly care for the clothes you already own.</p>
+        <h2>Conclusion</h2>
+        <p>You don't have to choose between being stylish and being ethical. Sustainable fashion is increasingly accessible, affordable, and mainstream. Every purchasing decision is a vote for the kind of fashion industry you want to exist. Start small: buy one thing second-hand instead of new, repair one item instead of replacing it. Small shifts in consumer behavior, scaled across millions of people, create enormous and lasting change.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Sustainable Fashion</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d2">
+      <span class="art-cat">Fashion</span>
+      <h3 class="art-title">Men's Style Guide: Building a Professional Wardrobe on a Budget</h3>
+      <div class="art-excerpt">Looking sharp doesn't require a designer wardrobe or a fashion budget that rivals a car payment. The secret to great men's style at any budget comes down to fit, quality over quantity, and knowing which foundational pieces to prioritize. Whether you're starting from scratch, rebuilding after years of neglect, or looking to upgrade your professional presence, this guide provides a practical roadmap.</div>
+      <div class="art-full">
+        <p>Looking sharp doesn't require a designer wardrobe or a fashion budget that rivals a car payment. The secret to great men's style at any budget comes down to fit, quality over quantity, and understanding which foundational pieces to prioritize. Whether you're starting from scratch, rebuilding after years of neglect, or just looking to upgrade your professional presence, this guide gives you a practical, prioritized roadmap.</p>
+        <h2>Rule #1: Fit Beats Everything</h2>
+        <p>A $50 shirt that fits you perfectly will always look better than a $500 shirt that doesn't. This is the single most important principle in men's style. Clothing that fits your body — not too tight, not too loose, with sleeves the right length and trouser breaks in the right place — communicates that you are intentional about your appearance. Learn your measurements and never compromise on fit regardless of the price tag.</p>
+        <h2>The Budget-Friendly Foundation</h2>
+        <p>Before spending money on statement pieces, invest in high-quality basics: 3–4 well-fitting dress shirts (white, light blue, pale pink, a simple stripe), 2 pairs of quality trousers or chinos in neutral colors (navy, gray, khaki), 1 well-fitting dark navy or charcoal blazer, and 1–2 pairs of quality leather shoes. These pieces will be worn constantly and form the foundation of every professional outfit you'll ever need.</p>
+        <h2>Where to Shop on a Budget</h2>
+        <p>Uniqlo offers remarkable quality at accessible prices — their Oxford shirts, fine-gauge knitwear, and trousers are widely considered best-in-class for the price point. M&amp;S and Charles Tyrwhitt offer excellent quality formal wear, especially during sales. ASOS has an enormous selection with regular deep discounts. And charity shops and vintage stores are gold mines for quality pieces at minimal cost that most men completely overlook.</p>
+        <h2>The Tailoring Investment</h2>
+        <p>Many men overlook tailoring completely, but it's one of the best wardrobe investments available. Basic alterations — taking in the waist of a blazer, shortening trouser length, slimming a shirt body — typically cost $15–40 and can make an average piece look custom-made. A quality blazer found at a charity shop that fits everywhere except the sleeves becomes an extraordinary value after a $20 alteration by any local tailor.</p>
+        <h2>Color Coordination Made Simple</h2>
+        <p>If you're unsure about color combination, this framework always works: build your outfit around one statement color and support it with neutrals. Navy blazer (statement) + white shirt + gray trousers + tan shoes (neutrals). When in doubt, fewer colors almost always look more sophisticated than more. The mistake most men make is adding too many colors simultaneously rather than building confidence with restraint and simplicity first.</p>
+        <h2>Conclusion</h2>
+        <p>Building a professional wardrobe on a budget is entirely achievable with the right priorities: fit first, quality over quantity, neutrals as foundation, and patience in building piece by piece. You don't need everything immediately. Start with five to seven versatile pieces, get them tailored if needed, and build from there. The investment in quality basics pays dividends in confidence and professional impression for years to come.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>7 min read</span><span><i class="fas fa-tag"></i>Men's Style</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in">
+      <span class="art-cat">Fashion</span>
+      <h3 class="art-title">The Return of 90s Fashion: Trends Making a Comeback</h3>
+      <div class="art-excerpt">Fashion moves in cycles. What goes out of style inevitably comes back — usually 20–30 years later, slightly reimagined for a new generation. The 90s revival is not just alive in 2025 — it's thriving. From baggy jeans and chunky sneakers to slip dresses and oversized blazers, the decade of grunge, minimalism, and early internet culture is staging one of fashion's most comprehensive comebacks in recent memory.</div>
+      <div class="art-full">
+        <p>Fashion, they say, moves in cycles. What goes out of style inevitably comes back — usually 20–30 years later, slightly reimagined for the sensibilities of a new generation. The 90s revival is not just alive in 2025 — it's thriving. From baggy jeans and chunky sneakers to slip dresses and oversized blazers, the decade of grunge, minimalism, and early internet culture is staging one of the most comprehensive fashion comebacks in recent memory.</p>
+        <h2>Why the 90s Are Back</h2>
+        <p>Nostalgia is a powerful cultural force, and millennials — now the dominant consumer demographic — are driving enormous interest in the aesthetics of their childhood and adolescence. Gen Z, who never experienced the 90s firsthand, finds the decade's fashion refreshingly different from the hyper-fitted silhouettes and disposable fast-fashion aesthetics they grew up with. The result is a cross-generational celebration of 90s style that feels both nostalgic and genuinely new simultaneously.</p>
+        <h2>1. Baggy and Relaxed Denim</h2>
+        <p>The skinny jean's decade-long dominance is definitively over. Wide-leg jeans, barrel jeans, and straight-leg fits with a relaxed through the thigh are everywhere. Vintage Levi's 501s — the quintessential 90s silhouette — sell for premium prices on resale platforms. To wear this trend in 2025: balance the volume at the bottom with a more fitted top, or lean fully into the oversized aesthetic with an equally relaxed shirt and chunky footwear.</p>
+        <h2>2. Chunky Sneakers (Dadcore)</h2>
+        <p>The "ugly sneaker" trend that seemed like it would fade quickly has shown remarkable staying power. Nike Air Max, New Balance 550s and 574s, and Asics Gel-series have all seen extraordinary revivals. These thick-soled, technical-looking sneakers have become the footwear of choice for fashion-forward dressers who want comfort alongside genuine streetwear credibility and the subtle visual interest of significant sole height.</p>
+        <h2>3. The Slip Dress</h2>
+        <p>The slip dress — a simple, bias-cut, satin or silk-effect dress originally worn as underwear — became a 90s staple thanks to icons like Kate Moss and Carolyn Bessette-Kennedy. Today it's back, worn alone in warm months or layered over a T-shirt, under a blazer, or with a rollneck for a contemporary take on the original 90s layering aesthetic that felt simultaneously accidental and entirely deliberate.</p>
+        <h2>4. Oversized Blazers</h2>
+        <p>Power dressing in the 90s meant oversized shoulder pads. The modern revival has softened this into the oversized blazer — draped over the shoulders rather than tailored to the body. This versatile piece works over everything from slip dresses to jeans and T-shirts, bringing an instant air of effortless cool to even the most casual outfit without requiring any particular occasion or level of formality.</p>
+        <h2>5. Logo Mania</h2>
+        <p>The 90s was the era of conspicuous branding — Calvin Klein, Tommy Hilfiger, DKNY, Versace. Today's revival has embraced visible logos with slightly more restraint. Designer monograms on accessories and subtle logo taping on sports-influenced pieces speak the same visual language without the maximalism of the decade's most extreme iterations, making the trend more wearable for a contemporary everyday context.</p>
+        <h2>How to Wear the Revival Without Looking Costume-y</h2>
+        <p>The key to incorporating 90s trends without looking like you're wearing a costume is selectivity. Wear one or two 90s-inspired pieces at a time rather than head-to-toe throwback looks. Update vintage silhouettes with modern accessories. Choose quality fabrics in contemporary colorways. Always let the clothes feel like an authentic expression of your personal style — not a perfect recreation of a decade you may not have even lived through.</p>
+        <h2>Conclusion</h2>
+        <p>The 90s revival is more than nostalgia — it's a genuine aesthetic movement that has reshuffled the silhouettes, proportions, and cultural references that define contemporary style. Whether you're a millennial revisiting the fashion of your youth or a Gen Z consumer discovering it for the first time, the 90s offers a rich visual vocabulary to draw from authentically and personally.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Fashion Trends</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+    <div class="article-card fade-in d1">
+      <span class="art-cat">Fashion</span>
+      <h3 class="art-title">How to Dress for Your Body Type: A Complete Style Guide</h3>
+      <div class="art-excerpt">Decades of fashion advice have drilled into us the idea that we should "dress for our body type" — as if certain shapes were problems to be hidden. The modern approach is more empowering. Understanding how proportions, silhouettes, and fit interact with your natural shape isn't about minimizing anything — it's about wearing clothes that work with your body so you feel your most confident and genuinely yourself.</div>
+      <div class="art-full">
+        <p>Decades of fashion advice have drilled into us the idea that we should "dress for our body type" — as if certain shapes were problems to be hidden or compensated for. The modern approach is more empowering than that. Understanding how proportions, silhouettes, and fit interact with your natural shape isn't about minimizing or maximizing anything — it's about wearing clothes that work with your body so you look and feel your most confident.</p>
+        <h2>The Core Principle: Balance and Proportion</h2>
+        <p>Fashion has long described body shapes using letters (H, A, V, X) or fruit analogies (apple, pear, hourglass) — but these are simplifications. The more useful principle is proportion: where are the natural widths and lines in your body, and how can clothing create the visual balance that makes you feel most like yourself? There are no wrong body shapes — only poorly fitted clothes and unhelpful fashion rules that don't serve real people.</p>
+        <h2>For a Rectangular (H-Shape) Body</h2>
+        <p>A rectangular body has similar measurements at the shoulders, waist, and hips, with minimal natural waist definition. The goal is to create visual interest and the illusion of curves. Fitted tops with ruffles, volume, or interesting necklines add shape to the upper body. Belted dresses and high-waisted bottoms create definition at the waist. Wrap dresses and tops are consistently flattering. Avoid shapeless shift dresses that emphasize the straight line without any interruption.</p>
+        <h2>For a Pear (A-Shape) Body</h2>
+        <p>A pear-shaped body is narrower at the shoulders and fuller at the hips and thighs. The goal is to balance proportions by adding visual interest to the upper body while keeping the lower half clean and simple. Structured blazers, bold necklines, off-shoulder tops, and statement sleeves all draw the eye upward. A-line skirts and wide-leg trousers that skim rather than cling through the hips are generally the most flattering lower-body choices for this shape.</p>
+        <h2>For an Apple (Round) Body</h2>
+        <p>An apple-shaped body carries more weight through the midsection than the hips or bust. The goal is to draw the eye toward the legs, arms, or face rather than the center. V-necklines elongate the torso. Empire-waist and wrap dresses that flow away from the body are universally flattering. Well-fitting, dark, straight-leg trousers elongate the lower body. Show off your best features rather than trying to hide the midsection — the former is empowering, the latter is exhausting and rarely successful.</p>
+        <h2>For an Inverted Triangle (V-Shape) Body</h2>
+        <p>An inverted triangle body is broader at the shoulders and narrower at the hips. The goal is to balance the broader upper body by adding visual volume to the lower half. Straight-cut trousers, A-line and pleated skirts, wide-leg pants, and bold patterns on the lower half all work well. Avoid padded shoulders, horizontal stripes on tops, and cap sleeves that draw additional attention to shoulder width.</p>
+        <h2>For an Hourglass Body</h2>
+        <p>An hourglass body has balanced shoulders and hips with a clearly defined narrower waist — proportional balance that responds well to almost any silhouette. Wrap dresses and tops, fitted blazers, high-waisted anything, and bodycon styles all showcase this shape beautifully. The key is to avoid drowning the defined waist in excess fabric. But ultimately, most styles work if they fit properly.</p>
+        <h2>The Universal Rules That Supersede All Others</h2>
+        <p>Regardless of body type, three rules apply universally and without exception: Fit is everything — properly fitted clothes always flatter more than the "right" style in the wrong size. Wear what makes you feel genuinely confident — confidence is the most powerful style element available to any person at any size. And fashion rules are made to be broken — the guidelines above are starting points, not ceilings or limitations on your self-expression.</p>
+        <h2>Conclusion</h2>
+        <p>Dressing for your body type is about understanding your personal proportions well enough to make informed choices — not about following prescriptive rules or approximating an idealized shape that was never meant to represent the full spectrum of human bodies. The best-dressed people in the world are not the ones with the "right" body type — they're the ones who know what fits them, wear it with conviction, and don't apologize for taking up space.</p>
+      </div>
+      <div class="art-meta"><span><i class="fas fa-clock"></i>8 min read</span><span><i class="fas fa-tag"></i>Style Guide</span></div>
+      <button class="rm-btn" onclick="toggleRM(this)">Read More</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sec-hdr fade-in">
+    <div class="sec-label">What I Offer</div>
+    <h2 class="sec-title">My Services</h2>
+    <div class="sec-div"></div>
+    <p class="sec-desc">Professional content services tailored to grow your brand and reach your audience.</p>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card fade-in">
+      <div class="svc-icon"><i class="fas fa-pen-nib"></i></div>
+      <h3 class="svc-title">Content Writing</h3>
+      <p class="svc-desc">Engaging, research-driven blog posts, articles, and website copy crafted in a natural human voice that resonates with your audience and builds lasting brand authority.</p>
+      <span class="svc-price">Starting from $5</span>
+    </div>
+    <div class="svc-card fade-in d1">
+      <div class="svc-icon"><i class="fas fa-search"></i></div>
+      <h3 class="svc-title">SEO Writing</h3>
+      <p class="svc-desc">Keyword-rich, Google-optimized content that ranks on page one. Every piece is written with search intent, natural keyword integration, and on-page SEO best practices.</p>
+      <span class="svc-price">Starting from $5</span>
+    </div>
+    <div class="svc-card fade-in d2">
+      <div class="svc-icon"><i class="fas fa-language"></i></div>
+      <h3 class="svc-title">Translation</h3>
+      <p class="svc-desc">Professional English ↔ Urdu translation with accurate cultural nuance, preserved tone, and fast turnaround. Ideal for documents, websites, and business communications.</p>
+      <span class="svc-price">Starting from $5</span>
+    </div>
+    <div class="svc-card fade-in d3">
+      <div class="svc-icon"><i class="fas fa-table"></i></div>
+      <h3 class="svc-title">Data Entry</h3>
+      <p class="svc-desc">Fast, accurate, and well-formatted data entry services. From spreadsheet population to database management, every task handled with precision and attention to detail.</p>
+      <span class="svc-price">Starting from $5</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="hire-top fade-in">
+    <div class="avail-badge"><span class="avail-dot"></span>Currently Available for Work</div>
+    <br><br>
+    <a href="mailto:parig5288@gmail.com" class="btn-hire">HIRE ME NOW</a>
+  </div>
+  <div class="sec-hdr fade-in" style="margin-top:3rem">
+    <div class="sec-label">Get In Touch</div>
+    <h2 class="sec-title">Let's Work Together</h2>
+    <div class="sec-div"></div>
+    <p class="sec-desc">Have a project in mind? I'd love to hear about it. I respond within 24 hours.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="fade-in">
+      <form id="cf" onsubmit="submitForm(event)">
+        <div class="form-grp">
+          <label class="form-lbl" for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" class="form-ctrl" placeholder="John Smith" />
+          <div class="err-msg" id="e-name">Please enter your name.</div>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" class="form-ctrl" placeholder="john@example.com" />
+          <div class="err-msg" id="e-email">Please enter a valid email address.</div>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="cf-type">Project Type</label>
+          <select id="cf-type" class="form-ctrl">
+            <option value="">Select a service...</option>
+            <option>Article Writing</option>
+            <option>SEO Content</option>
+            <option>Translation</option>
+            <option>Data Entry</option>
+            <option>Other</option>
+          </select>
+          <div class="err-msg" id="e-type">Please select a project type.</div>
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="cf-budget">Your Budget (USD)</label>
+          <input type="text" id="cf-budget" class="form-ctrl" placeholder="e.g. $50" />
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="cf-msg">Message</label>
+          <textarea id="cf-msg" class="form-ctrl" placeholder="Tell me about your project..."></textarea>
+          <div class="err-msg" id="e-msg">Please enter your message.</div>
+        </div>
+        <button type="submit" class="btn btn-gold" style="width:100%">Send Message <i class="fas fa-paper-plane" style="margin-left:8px"></i></button>
+      </form>
+      <div class="form-ok" id="form-ok">
+        <i class="fas fa-check-circle" style="font-size:2rem;display:block;margin-bottom:1rem"></i>
+        <strong>Message sent!</strong><br>Thank you for reaching out. I'll respond within 24 hours.
+      </div>
+    </div>
+    <div class="fade-in d2">
+      <div style="display:flex;flex-direction:column;gap:1.3rem">
+        <a href="mailto:parig5288@gmail.com" class="cta-card">
+          <div class="cta-icon icon-em"><i class="fas fa-envelope"></i></div>
+          <div><div class="cta-lbl">Email</div><div class="cta-val">parig5288@gmail.com</div></div>
+        </a>
+        <div class="svc-card" style="text-align:left;padding:1.5rem">
+          <h3 style="font-size:.88rem;margin-bottom:1rem;color:var(--gold);font-family:'Lato',sans-serif;font-weight:700;letter-spacing:1px;text-transform:uppercase">Why Work With Me?</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.65rem">
+            <li style="display:flex;gap:.75rem;align-items:flex-start;color:var(--white-dim);font-size:.88rem"><i class="fas fa-check" style="color:var(--gold);margin-top:3px;flex-shrink:0"></i>100% human-written, plagiarism-free content</li>
+            <li style="display:flex;gap:.75rem;align-items:flex-start;color:var(--white-dim);font-size:.88rem"><i class="fas fa-check" style="color:var(--gold);margin-top:3px;flex-shrink:0"></i>SEO-optimized for Google rankings</li>
+            <li style="display:flex;gap:.75rem;align-items:flex-start;color:var(--white-dim);font-size:.88rem"><i class="fas fa-check" style="color:var(--gold);margin-top:3px;flex-shrink:0"></i>Fast turnaround — 24hr for most orders</li>
+            <li style="display:flex;gap:.75rem;align-items:flex-start;color:var(--white-dim);font-size:.88rem"><i class="fas fa-check" style="color:var(--gold);margin-top:3px;flex-shrink:0"></i>Unlimited revisions until you're satisfied</li>
+            <li style="display:flex;gap:.75rem;align-items:flex-start;color:var(--white-dim);font-size:.88rem"><i class="fas fa-check" style="color:var(--gold);margin-top:3px;flex-shrink:0"></i>Affordable rates, premium quality delivery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="sec-hdr fade-in">
+    <div class="sec-label">Client Stories</div>
+    <h2 class="sec-title">What Clients Say</h2>
+    <div class="sec-div"></div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card fade-in">
+      <div class="testi-q">"</div>
+      <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="testi-text">Pari delivered outstanding SEO articles for our health blog. Within one month of publishing her content, our organic traffic increased by 40%. Her writing is natural, well-researched, and genuinely engaging — not the robotic AI content you get from most writers these days. She understood our brand voice immediately and consistently delivered ahead of every deadline.</p>
+      <div class="testi-author">
+        <div class="testi-av">SM</div>
+        <div><div class="testi-name">Sarah M.</div><div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:4px"></i>United States</div></div>
+      </div>
+    </div>
+    <div class="testi-card fade-in d1">
+      <div class="testi-q">"</div>
+      <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="testi-text">Excellent translation work from Pari. We needed a series of business documents translated from English to Urdu for our Pakistan expansion, and the quality was outstanding. Fast, accurate, and professional — she captured the right tone for each document type perfectly. We've already placed a second order. Highly recommended for anyone needing English-Urdu translation.</p>
+      <div class="testi-author">
+        <div class="testi-av">AK</div>
+        <div><div class="testi-name">Ahmed K.</div><div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:4px"></i>United Arab Emirates</div></div>
+      </div>
+    </div>
+    <div class="testi-card fade-in d2">
+      <div class="testi-q">"</div>
+      <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="testi-text">Best content writer I've worked with on Fiverr, full stop. Every article Pari delivered was unique, thoroughly researched, and delivered ahead of deadline. The SEO optimization was genuinely sophisticated — not just keyword stuffing, but real strategic placement that has noticeably improved our search rankings. She's now my go-to writer for all content projects. Five stars without hesitation.</p>
+      <div class="testi-author">
+        <div class="testi-av">JR</div>
+        <div><div class="testi-name">James R.</div><div class="testi-loc"><i class="fas fa-map-marker-alt" style="margin-right:4px"></i>United Kingdom</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--gold);display:block;margin-bottom:.8rem">Pari<span style="color:var(--white)">Gul</span></span>
+      <p>Professional content writer and SEO specialist based in Pakistan. Creating content that ranks, converts, and builds lasting brand authority across every niche.</p>
+      <a href="mailto:parig5288@gmail.com" class="fe"><i class="fas fa-envelope" style="margin-right:6px"></i>parig5288@gmail.com</a>
+    </div>
+    <div>
+      <div class="footer-hd">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-hd">Connect</div>
+      <div class="social-row" style="margin-bottom:1rem">
+        <a href="#" class="soc-lnk" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="soc-lnk" title="Fiverr"><i class="fas fa-f"></i></a>
+        <a href="#" class="soc-lnk" title="Upwork"><i class="fas fa-briefcase"></i></a>
+      </div>
+      <div style="color:var(--white-dim);font-size:.84rem;line-height:2">
+        <div><i class="fas fa-map-marker-alt" style="color:var(--gold);width:16px;margin-right:6px"></i>Pakistan</div>
+        <div><i class="fas fa-clock" style="color:var(--gold);width:16px;margin-right:6px"></i>Response within 24 hours</div>
+        <div><i class="fas fa-globe" style="color:var(--gold);width:16px;margin-right:6px"></i>Available Worldwide</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-btm">
+    <p>© 2025 <span>Pari Gul</span>. All Rights Reserved. | Professional Content Writer &amp; SEO Specialist</p>
+  </div>
+</footer>
+
+<script>
+  // PARTICLES
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let pts = [], af;
+  function rsz() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+  rsz(); window.addEventListener('resize', rsz);
+  class Pt {
+    constructor() { this.r(); }
+    r() {
+      this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height;
+      this.sz = Math.random() * 1.8 + 0.4; this.vx = (Math.random()-.5)*.35; this.vy = (Math.random()-.5)*.35;
+      this.op = Math.random()*.45+.1;
+    }
+    u() {
+      this.x += this.vx; this.y += this.vy;
+      if (this.x<0||this.x>canvas.width) this.vx*=-1;
+      if (this.y<0||this.y>canvas.height) this.vy*=-1;
+    }
+    d() {
+      ctx.beginPath(); ctx.arc(this.x,this.y,this.sz,0,Math.PI*2);
+      ctx.fillStyle=`rgba(201,168,76,${this.op})`; ctx.fill();
+    }
+  }
+  for(let i=0;i<75;i++) pts.push(new Pt());
+  function drawLines() {
+    for(let i=0;i<pts.length;i++) for(let j=i+1;j<pts.length;j++) {
+      const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<110) { ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y); ctx.strokeStyle=`rgba(201,168,76,${.055*(1-dist/110)})`; ctx.lineWidth=.5; ctx.stroke(); }
+    }
+  }
+  function anim() { ctx.clearRect(0,0,canvas.width,canvas.height); pts.forEach(p=>{p.u();p.d();}); drawLines(); af=requestAnimationFrame(anim); }
+  anim();
+  window.addEventListener('scroll',()=>{ if(window.scrollY>window.innerHeight){cancelAnimationFrame(af);}else if(!af){anim();} });
+
+  // TYPEWRITER
+  const words=['Content Writer','SEO Specialist','Translator','Web Content Expert'];
+  let wi=0,ci=0,del=false;
+  const tw=document.getElementById('tw-text');
+  function type() {
+    const w=words[wi];
+    if(!del){tw.textContent=w.slice(0,ci+1);ci++;if(ci===w.length){del=true;setTimeout(type,1800);return;}}
+    else{tw.textContent=w.slice(0,ci-1);ci--;if(ci===0){del=false;wi=(wi+1)%words.length;}}
+    setTimeout(type,del?58:108);
+  }
+  type();
+
+  // NAVBAR SCROLL
+  window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50));
+
+  // HAMBURGER
+  function toggleMenu(){document.getElementById('nav-links').classList.toggle('open');document.getElementById('hamburger').classList.toggle('open');}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('nav-links').classList.remove('open');document.getElementById('hamburger').classList.remove('open');}));
+
+  // SMOOTH SCROLL
+  function scrollTo(sel){const t=document.querySelector(sel);if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-68,behavior:'smooth'});}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-68,behavior:'smooth'});}}));
+
+  // INTERSECTION OBSERVER — fade-in + skills
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}}),{threshold:.1});
+  document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+
+  let skillsDone=false;
+  const sio=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting&&!skillsDone){skillsDone=true;document.querySelectorAll('.skill-fill').forEach(b=>b.style.width=b.getAttribute('data-p')+'%');}}),{threshold:.25});
+  const ss=document.getElementById('skills'); if(ss) sio.observe(ss);
+
+  // TABS
+  function switchTab(id,btn){
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    const panel=document.getElementById('tab-'+id);
+    panel.classList.add('active');
+    panel.querySelectorAll('.fade-in:not(.visible)').forEach(el=>el.classList.add('visible'));
+  }
+
+  // READ MORE/LESS
+  function toggleRM(btn){
+    const card=btn.closest('.article-card');
+    const excerpt=card.querySelector('.art-excerpt');
+    const full=card.querySelector('.art-full');
+    if(full.style.display==='block'){full.style.display='none';excerpt.style.display='block';btn.textContent='Read More';}
+    else{full.style.display='block';excerpt.style.display='none';btn.textContent='Read Less';}
+  }
+
+  // FORM VALIDATION
+  function submitForm(e){
+    e.preventDefault();let ok=true;
+    const name=document.getElementById('cf-name');
+    const email=document.getElementById('cf-email');
+    const type=document.getElementById('cf-type');
+    const msg=document.getElementById('cf-msg');
+    [name,email,type,msg].forEach(f=>f.classList.remove('err'));
+    document.querySelectorAll('.err-msg').forEach(m=>m.classList.remove('show'));
+    if(!name.value.trim()){name.classList.add('err');document.getElementById('e-name').classList.add('show');ok=false;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){email.classList.add('err');document.getElementById('e-email').classList.add('show');ok=false;}
+    if(!type.value){type.classList.add('err');document.getElementById('e-type').classList.add('show');ok=false;}
+    if(!msg.value.trim()){msg.classList.add('err');document.getElementById('e-msg').classList.add('show');ok=false;}
+    if(ok){document.getElementById('cf').style.display='none';document.getElementById('form-ok').style.display='block';}
+  }
+
+  // Hero fade-in on load
+  setTimeout(()=>document.querySelectorAll('#hero .fade-in').forEach(el=>el.classList.add('visible')),80);
+</script>
+</body>
+</html>
